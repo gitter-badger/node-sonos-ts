@@ -2383,7 +2383,7 @@ img {
 				<h2>Usage</h2>
 			</a>
 			<p>To use the library just add it to your project. <code>npm install @svrooij/sonos</code>. And start using it. This library isn&#39;t meant to be used by itself, as you see in the <a href="./examples">examples</a> you still need to use node (or typescript).</p>
-			<p>You&#39;ll need to get the <strong>SonosDevice</strong> by one of the <a href="#sonosmanager-and-logical-devices">methods below</a>, and start using the extra <a href="#extra-functionality">functionality</a>, the <a href="#shortcuts">shortcuts</a> or the <a href="#exposed-services">exposed services</a>. There also is an <a href="#events">Eventlistener</a> that allows you to subscribe to all the events your sonos sends out. This library allows you to do <strong>everything</strong> you can do with the Sonos application (except search external <a href="./src/musicservices">music services</a> :cry:).</p>
+			<p>You&#39;ll need to get the <a href="https://svrooij.github.io/node-sonos-ts/classes/_sonos_device_.sonosdevice.html"><strong>SonosDevice</strong></a> by one of the <a href="#sonosmanager-and-logical-devices">methods below</a>, and start using the extra <a href="#extra-functionality">functionality</a>, the <a href="#shortcuts">shortcuts</a> or the <a href="#exposed-services">exposed services</a>. There also is an <a href="#events">Eventlistener</a> that allows you to subscribe to all the events your sonos sends out. This library allows you to do <strong>everything</strong> you can do with the Sonos application (except search external <a href="./src/musicservices">music services</a> :cry:).</p>
 			<pre><code class="language-JavaScript"><span class="hljs-keyword">const</span> SonosManager = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@svrooij/sonos'</span>).SonosManager
 <span class="hljs-keyword">const</span> manager = <span class="hljs-keyword">new</span> SonosManager()
 manager.InitializeWithDiscovery(<span class="hljs-number">10</span>) <span class="hljs-comment">// Search for all devices in your network, for max 10 seconds.</span>
@@ -2480,7 +2480,7 @@ sonos.ExecuteCommand(<span class="hljs-string">'SendSomeLove'</span>).catch(<spa
 			<a href="#sonosmanager-and-logical-devices" id="sonosmanager-and-logical-devices" style="color: inherit; text-decoration: none;">
 				<h2>SonosManager and logical devices</h2>
 			</a>
-			<p>This library has a <strong>SonosManager</strong> that resolves all your sonos groups for you. It also manages group updates. Every <strong>SonosDevice</strong> created by this manager has some extra properties that can be used by your application. These properties will automatically be updated on changes.</p>
+			<p>This library has a <a href="https://svrooij.github.io/node-sonos-ts/classes/_sonos_manager_.sonosmanager.html"><strong>SonosManager</strong></a> that resolves all your sonos groups for you. It also manages group updates. Every <strong>SonosDevice</strong> created by this manager has some extra properties that can be used by your application. These properties will automatically be updated on changes.</p>
 			<ul>
 				<li><strong>.Coordinator</strong> - Point to the devices&#39; group coordinator (or to itself when it&#39;s the coordinator).</li>
 				<li><strong>.GroupName</strong> - The name of the group this device is in. eg &#39;Kitchen + 2&#39;</li>
