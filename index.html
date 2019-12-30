@@ -2395,7 +2395,7 @@ manager.InitializeWithDiscovery(<span class="hljs-number">10</span>) <span class
 			<a href="#extra-functionality" id="extra-functionality" style="color: inherit; text-decoration: none;">
 				<h3>Extra functionality</h3>
 			</a>
-			<p>I also implemented extra functionatity for each player. (mostly combining calls):</p>
+			<p>These methods aren&#39;t possible with the generated services. This is added functionality:</p>
 			<ul>
 				<li><strong>.AddUriToQueue(&#39;spotify:track:0GiWi4EkPduFWHQyhiKpRB&#39;)</strong> - Add a track to be next track in the queue, metadata is guessed :musical_note:.</li>
 				<li><strong>.AlarmList()</strong> - List all your alarms :alarm_clock:</li>
@@ -2408,15 +2408,6 @@ manager.InitializeWithDiscovery(<span class="hljs-number">10</span>) <span class
 				<li><strong>.SwitchToQueue()</strong> - Switch to queue (after power-on or when playing a radiostream).</li>
 				<li><strong>.SwitchToTV()</strong> - On your playbar you can use this to switch to TV input :tv:.</li>
 				<li><strong>.TogglePlayback()</strong> - If playing or transitioning your playback is paused :arrow_forward:. If stopped or paused your playback is resumed.</li>
-			</ul>
-			<p>You can also browse content, see <a href="./examples/content.js">content.js</a></p>
-			<ul>
-				<li><strong>.Browse({...})</strong> - Browse local content.</li>
-				<li><strong>.BrowseWithDefaults({...})</strong> - Browse local content by only specifying the ObjectID, the rest will be set to default.</li>
-				<li><strong>.GetFavoriteRadioShows({...})</strong> - Get your favorite radio shows</li>
-				<li><strong>.GetFavoriteRadioStations({...})</strong> - Get your favorite radio stations</li>
-				<li><strong>.GetFavorites({...})</strong> - Get your favorite songs</li>
-				<li><strong>.GetQueue({...})</strong> - Get the current queue</li>
 			</ul>
 			<a href="#shortcuts" id="shortcuts" style="color: inherit; text-decoration: none;">
 				<h3>Shortcuts</h3>
@@ -2440,27 +2431,90 @@ manager.InitializeWithDiscovery(<span class="hljs-number">10</span>) <span class
 				<li><strong>.SeekTrack(3)</strong> - Go to other track in the queue *.</li>
 			</ul>
 			<p>These operations (marked with <code>*</code>) are send to the coordinator if the device is created by the <strong>SonosManager</strong>. So you can send <strong>.Next()</strong> to each device in a group and it will be send to the correct device.</p>
+			<a href="#content" id="content" style="color: inherit; text-decoration: none;">
+				<h3>Content</h3>
+			</a>
+			<p>You can also browse content, see <a href="./examples/content.js">content.js</a>, these are actually all shortcuts to the browse method.</p>
+			<ul>
+				<li><strong>.Browse({...})</strong> - Browse local content.</li>
+				<li><strong>.BrowseWithDefaults({...})</strong> - Browse local content by only specifying the ObjectID, the rest will be set to default.</li>
+				<li><strong>.GetFavoriteRadioShows({...})</strong> - Get your favorite radio shows</li>
+				<li><strong>.GetFavoriteRadioStations({...})</strong> - Get your favorite radio stations</li>
+				<li><strong>.GetFavorites({...})</strong> - Get your favorite songs</li>
+				<li><strong>.GetQueue({...})</strong> - Get the current queue</li>
+			</ul>
 			<a href="#exposed-services" id="exposed-services" style="color: inherit; text-decoration: none;">
 				<h3>Exposed services</h3>
 			</a>
 			<p>Your sonos device has several <em>services</em> defined in it&#39;s <em>device description</em> (available at <code>http://sonos_ip:1400/xml/device_description.xml</code>). This library uses a <a href="./src/generator/service-generator.js">generator</a> to automatically generate all the services my sonos device has. All these services are exposed in the <strong>SonosDevice</strong>:</p>
-			<ul>
-				<li><strong>.AVTransportService</strong> - Control the playback (play, pause, next, stop).</li>
-				<li><strong>.AlarmClockService</strong> - Control your alarms.</li>
-				<li><strong>.AudioInService</strong> - ?</li>
-				<li><strong>.ConnectionManagerService</strong> - ?</li>
-				<li><strong>.ContentDirectoryService</strong> - Control your content?</li>
-				<li><strong>.DevicePropertiesService</strong> - Change your device properties (led, StereoPair, AutoPlay).</li>
-				<li><strong>.GroupManagementService</strong> - Manage your groups (what&#39;s the differance with ZoneGroupTopologyService?).</li>
-				<li><strong>.GroupRenderingControlService</strong> - RenderingControlService for groups.</li>
-				<li><strong>.MusicServicesService</strong> - All your music services.</li>
-				<li><strong>.QPlayService</strong> - To authorize QPlay, needs explaining.</li>
-				<li><strong>.QueueService</strong> - Queue management</li>
-				<li><strong>.RenderingControlService</strong> - Control rendering (eg. volume)</li>
-				<li><strong>.SystemPropertiesService</strong> - Manage connected accounts</li>
-				<li><strong>.VirtualLineInService</strong> - ?</li>
-				<li><strong>.ZoneGroupTopologyService</strong> - Zone management, mostly used under the covers by <a href="./src/sonos-manager.ts">SonosManager</a></li>
-			</ul>
+			<table>
+				<thead>
+					<tr>
+						<th>Service name</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+						<td><code>.AVTransportService</code></td>
+						<td>Control the playback (play, pause, next, stop).</td>
+					</tr>
+					<tr>
+						<td><code>.AlarmClockService</code></td>
+						<td>Control your alarms.</td>
+					</tr>
+					<tr>
+						<td><code>.AudioInService</code></td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<td><code>.ConnectionManagerService</code></td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<td><code>.ContentDirectoryService</code></td>
+						<td>Browse and modify for local content</td>
+					</tr>
+					<tr>
+						<td><code>.DevicePropertiesService</code></td>
+						<td>Change your device properties (led, StereoPair, AutoPlay).</td>
+					</tr>
+					<tr>
+						<td><code>.GroupManagementService</code></td>
+						<td>Manage your groups (what&#39;s the differance with ZoneGroupTopologyService?).</td>
+					</tr>
+					<tr>
+						<td><code>.GroupRenderingControlService</code></td>
+						<td>RenderingControlService for groups.</td>
+					</tr>
+					<tr>
+						<td><code>.MusicServicesService</code></td>
+						<td>All your music services.</td>
+					</tr>
+					<tr>
+						<td><code>.QPlayService</code></td>
+						<td>To authorize QPlay, needs explaining.</td>
+					</tr>
+					<tr>
+						<td><code>.QueueService</code></td>
+						<td>Queue management</td>
+					</tr>
+					<tr>
+						<td><code>.RenderingControlService</code></td>
+						<td>Control rendering (eg. volume)</td>
+					</tr>
+					<tr>
+						<td><code>.SystemPropertiesService</code></td>
+						<td>Manage connected accounts</td>
+					</tr>
+					<tr>
+						<td><code>.VirtualLineInService</code></td>
+						<td>?</td>
+					</tr>
+					<tr>
+						<td><code>.ZoneGroupTopologyService</code></td>
+						<td>Zone management, mostly used under the covers by <a href="./src/sonos-manager.ts">SonosManager</a></td>
+					</tr>
+			</tbody></table>
 			<a href="#commands" id="commands" style="color: inherit; text-decoration: none;">
 				<h3>Commands</h3>
 			</a>
@@ -2616,14 +2670,38 @@ sonosDevice.RenderingControlService.Events.on(ServiceEvents.LastChange, data =&g
 			</a>
 			<p>This library makes use of <a href="https://www.npmjs.com/package/debug">node debug</a>, if you want to see debug logs you can set the <code>DEBUG</code> environment variable to one of the following values.
 			If you run the examples with the VSCode debug task, this variable is set to <code>sonos:*</code> so you should see all the logs.</p>
-			<ul>
-				<li><code>DEBUG=sonos:*</code> -&gt; See all debug logs.</li>
-				<li><code>DEBUG=sonos:device</code> -&gt; See all debug logs from the SonosDevice class.</li>
-				<li><code>DEBUG=sonos:service:*</code> -&gt; See all debug logs for all the various services (this is where most of the magic happens).</li>
-				<li><code>DEBUG=sonos:service:[service_name]</code> -&gt; See all debug logs for a specific service.</li>
-				<li><code>DEBUG=sonos:service:*:[ip]</code> -&gt; See all debug logs for all the various services for a single device (this is where most of the magic happens).</li>
-				<li><code>DEBUG=sonos:metadata</code> -&gt; See all debug logs for the metadata helper.</li>
-			</ul>
+			<table>
+				<thead>
+					<tr>
+						<th>Environment variable</th>
+						<th>What will log</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+						<td><code>DEBUG=sonos:*</code></td>
+						<td>See all debug logs.</td>
+					</tr>
+					<tr>
+						<td><code>DEBUG=sonos:device</code></td>
+						<td>See all debug logs from the SonosDevice class.</td>
+					</tr>
+					<tr>
+						<td><code>DEBUG=sonos:service:*</code></td>
+						<td>See all debug logs for all the various services (this is where most of the magic happens).</td>
+					</tr>
+					<tr>
+						<td><code>DEBUG=sonos:service:[service_name]</code></td>
+						<td>See all debug logs for a specific service.</td>
+					</tr>
+					<tr>
+						<td><code>DEBUG=sonos:service:*:[ip]</code></td>
+						<td>See all debug logs for all the various services for a single device (this is where most of the magic happens).</td>
+					</tr>
+					<tr>
+						<td><code>DEBUG=sonos:metadata</code></td>
+						<td>See all debug logs for the metadata helper.</td>
+					</tr>
+			</tbody></table>
 			<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
 				<h2>Contributing</h2>
 			</a>
