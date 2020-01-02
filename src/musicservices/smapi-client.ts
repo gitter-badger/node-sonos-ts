@@ -12,19 +12,28 @@ export interface SmapiClientOptions {
   timezone?: string;
 }
 
-export interface SearchResult {
+export interface MediaResult {
   index: number;
   count: number;
   total: number;
-  mediaMetadata?: MediaMetadata[]; 
+  items?: MediaItem[];
+  containers?: MediaContainer[];
 }
 
-export interface MediaMetadata {
+export interface MediaItem {
   id: string;
   itemType: string;
   title: string;
   summary?: string;
   trackUri?: string;
+}
+
+export interface MediaContainer {
+  id: string;
+  itemType: string;
+  title: string;
+  summary?: string;
+  albumArtURI?: string;
 }
 
 export class SmapiClient {
@@ -47,29 +56,51 @@ export class SmapiClient {
     return this.SoapRequestWithBody('getMediaURI', input);
   }
 
-  public Search(input: {id: string; term: string; index: number; count: number}): Promise<SearchResult>{
-    return this.SoapRequestWithBody<any,any>('search', input).then((resp: any) => this.PostProcessSearch(resp.searchResult));
+  /**
+   * Browse for items and containers and show metadata
+   *
+   * @param {string} input.id Get the metadata for what? 'root' is for the top level, use the ID of a container to browse that container. Use the ID of an item to display the metadata.
+   * @param {number} input.index Where to start in the list (for paging)
+   * @param {number} input.count How many items do you want (for paging)
+   * @returns {Promise<MediaResult>}
+   * @memberof SmapiClient
+   */
+  public GetMetadata(input: { id: string; count: number; index: number }): Promise<MediaResult> {
+    return this.SoapRequestWithBody<any,any>('getMetadata', input).then((resp: any) => this.postProcessMediaList(resp.getMetadataResult));
   }
 
-  private PostProcessSearch(input: any): SearchResult {
-    const result: SearchResult = {
+  /**
+   * Search for items (if supported)
+   *
+   * @param {{id: string; term: string; index: number; count: number}} input
+   * @param {string} input.id The container to look in ['A:STATION', 'A:...']
+   * @param {string} input.term Your query
+   * @param {number} input.index Where to start in the list (for paging)
+   * @param {number} input.count How many items do you want (for paging)
+   * @returns {Promise<MediaResult>}
+   * @memberof SmapiClient
+   */
+  public Search(input: {id: string; term: string; index: number; count: number}): Promise<MediaResult>{
+    return this.SoapRequestWithBody<any, any>('search', input).then((resp: any) => this.postProcessMediaList(resp.searchResult));
+  }
+
+  private postProcessMediaList(input: any): MediaResult {
+    const result: MediaResult = {
       index: input.index,
       count: input.count,
       total: input.total,
-      mediaMetadata: undefined
+      items: this.forceArray(input.mediaMetadata),
+      containers: this.forceArray(input.mediaCollection)
     };
 
-    if(input.mediaMetadata !== undefined){
-      if(Array.isArray(input.mediaMetadata)){
-        result.mediaMetadata = input.mediaMetadata as Array<MediaMetadata>;
-      } else {
-        result.mediaMetadata = [input.mediaMetadata];
-      }
-      result.mediaMetadata.forEach(m => {
+    if(result.items !== undefined){
+      // TODO Implement this for other item types.
+      result.items.forEach(m => {
         if(m.itemType === 'stream')
           m.trackUri = `x-sonosapi-stream:${m.id}?sid=${this.options.serviceId}`
       });
     }
+
     return result;
   }
 
@@ -130,6 +161,11 @@ export class SmapiClient {
       }
     );
   }
+
+  private forceArray<TArray>(input: unknown | undefined): TArray[] | undefined {
+    if(input === undefined) return undefined;
+    return (Array.isArray(input) ? input : [input]) as TArray[];
+  } 
 
   private generateRequestBody<TBody>(action: string, body: TBody): string {
     const soapHeader = this.generateSoapHeader();

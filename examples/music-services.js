@@ -30,14 +30,14 @@ const sonos = new SonosDevice(process.env.SONOS_HOST || '192.168.96.56')
 //   console.log(resp.SessionId)
 // }).catch(console.error)
 
-sonos.MusicServicesList().then(services => {
-  // var annonymous = services.filter(s => s.Policy.Auth === 'Anonymous')
-  // console.log(JSON.stringify(annonymous, null, 2))
-  services.forEach(s => {
-    var cap = parseInt(s.Capabilities)
-    console.log('%s%s\t%s\t%s\t%s', s.Id.padEnd(5, ' '), s.Name.padEnd(20, ' '), s.Policy.Auth.padEnd(9, ' '), s.Capabilities.toString().padStart(9, ' '), cap.toString(2).padStart(25, ' '))
-  })
-}).catch(console.error)
+// sonos.MusicServicesList().then(services => {
+//   // var annonymous = services.filter(s => s.Policy.Auth === 'Anonymous')
+//   // console.log(JSON.stringify(annonymous, null, 2))
+//   services.forEach(s => {
+//     var cap = parseInt(s.Capabilities)
+//     console.log('%s%s\t%s\t%s\t%s', s.Id.padEnd(5, ' '), s.Name.padEnd(20, ' '), s.Policy.Auth.padEnd(9, ' '), s.Capabilities.toString().padStart(9, ' '), cap.toString(2).padStart(25, ' '))
+//   })
+// }).catch(console.error)
 
 // sonos.MusicServicesClient('NRK Radio')
 //   .then(musicClient => {
@@ -48,6 +48,15 @@ sonos.MusicServicesList().then(services => {
 //     return sonos.SetAVTransportURI(searchResult.mediaMetadata[0].trackUri).then(success => sonos.Play())
 //   })
 //   .catch(console.error)
+
+sonos.MusicServicesClient('JUKE')
+  .then(musicClient => {
+    return musicClient.GetMetadata({ id: 'stationCollection:stations-slam', count: 100, index: 0 })
+  })
+  .then(searchResult => {
+    console.log(JSON.stringify(searchResult, null, 2))
+  })
+  .catch(console.error)
 
 // sonos.MusicServicesClient('radioPup')
 //   .then(musicClient => {
