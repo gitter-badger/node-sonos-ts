@@ -2446,7 +2446,7 @@ manager.InitializeWithDiscovery(<span class="hljs-number">10</span>) <span class
 			<a href="#exposed-services" id="exposed-services" style="color: inherit; text-decoration: none;">
 				<h3>Exposed services</h3>
 			</a>
-			<p>Your sonos device has several <em>services</em> defined in it&#39;s <em>device description</em> (available at <code>http://sonos_ip:1400/xml/device_description.xml</code>). This library uses a <a href="./src/generator/service-generator.js">generator</a> to automatically generate all the services my sonos device has. All these services are exposed in the <strong>SonosDevice</strong>:</p>
+			<p>Your sonos device has several <em>services</em> defined in it&#39;s <em>device description</em> (available at <code>http://sonos_ip:1400/xml/device_description.xml</code>). This library uses a <a href="./src/generator/">generator</a> to automatically generate all the services my sonos device has. All these services are exposed in the <strong>SonosDevice</strong>:</p>
 			<table>
 				<thead>
 					<tr>
@@ -2708,7 +2708,8 @@ sonosDevice.RenderingControlService.Events.on(ServiceEvents.LastChange, data =&g
 			<p>You can contribute in many ways. Asking good questions, solving bugs, sponsoring me on github. This library is build in my spare time, so don&#39;t be rude about it.</p>
 			<p>If you&#39;re using a music service that currently isn&#39;t supported for metadata generation, you should check out the <a href="./src/helpers/metadata-helper.ts">metadata generator</a>.
 				It works by taking an url (which you can get by running the <a href="./examples/get-position-info.js">get-position-info sample</a>). And generating a <strong>Track</strong> for it. Use the information out the console to get the right values.
-			The values you&#39;ll be looking for are <code>ProtocolInfo</code>, <code>TrackUri</code>, <code>UpnpClass</code>, <code>ItemID</code> and <code>ParentID</code></p>
+			The values you&#39;ll be looking for are <code>ProtocolInfo</code>, <code>TrackUri</code>, <code>UpnpClass</code>, <code>ItemID</code> and <code>ParentID</code>.</p>
+			<p>Currently I&#39;m also looking for a way to add documentation to the automatic generated services, so if you got any ideas, be sure to let me know.</p>
 			<p><a href="https://github.com/sponsors/svrooij"><img src="https://img.shields.io/badge/Sponsor-on%20Github-red" alt="Support me on Github"></a></p>
 			<a href="#developer-section" id="developer-section" style="color: inherit; text-decoration: none;">
 				<h2>Developer section</h2>
