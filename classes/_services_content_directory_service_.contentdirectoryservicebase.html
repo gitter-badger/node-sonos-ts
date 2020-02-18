@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CreateQueueResponse | @svrooij/sonos</title>
+	<title>ContentDirectoryServiceBase | @svrooij/sonos</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2369,11 +2369,32 @@ img {
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
+		<section class="tsd-panel tsd-comment">
+			<div class="tsd-comment tsd-typography">
+				<div class="lead">
+					<p>Browse for local content</p>
+				</div>
+				<dl class="tsd-comment-tags">
+					<dt>export</dt>
+					<dd></dd>
+				</dl>
+			</div>
+		</section>
 		<section class="tsd-panel tsd-hierarchy">
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<span class="target">CreateQueueResponse</span>
+					<a href="_services_base_service_.baseservice.html" class="tsd-signature-type">BaseService</a>
+					<ul class="tsd-hierarchy">
+						<li>
+							<span class="target">ContentDirectoryServiceBase</span>
+							<ul class="tsd-hierarchy">
+								<li>
+									<a href="_services_content_directory_service_.contentdirectoryservice.html" class="tsd-signature-type">ContentDirectoryService</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</section>
@@ -2381,26 +2402,885 @@ img {
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
+					<section class="tsd-index-section tsd-is-inherited">
+						<h3>Constructors</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#constructor" class="tsd-kind-icon">constructor</a></li>
+						</ul>
+					</section>
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_services_queue_service_.createqueueresponse.html#queueid" class="tsd-kind-icon">QueueID</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#controlurl" class="tsd-kind-icon">control<wbr>Url</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#eventsuburl" class="tsd-kind-icon">event<wbr>Sub<wbr>Url</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#host" class="tsd-kind-icon">host</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#port" class="tsd-kind-icon">port</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#scpurl" class="tsd-kind-icon">scp<wbr>Url</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#servicenane" class="tsd-kind-icon">service<wbr>Nane</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section tsd-is-inherited">
+						<h3>Accessors</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#events" class="tsd-kind-icon">Events</a></li>
+							<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#debug" class="tsd-kind-icon">debug</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
+						<h3>Methods</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#browse" class="tsd-kind-icon">Browse</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#createobject" class="tsd-kind-icon">Create<wbr>Object</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#destroyobject" class="tsd-kind-icon">Destroy<wbr>Object</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#findprefix" class="tsd-kind-icon">Find<wbr>Prefix</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#getalbumartistdisplayoption" class="tsd-kind-icon">Get<wbr>Album<wbr>Artist<wbr>Display<wbr>Option</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#getallprefixlocations" class="tsd-kind-icon">Get<wbr>All<wbr>Prefix<wbr>Locations</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#getbrowseable" class="tsd-kind-icon">Get<wbr>Browseable</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#getlastindexchange" class="tsd-kind-icon">Get<wbr>Last<wbr>Index<wbr>Change</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#getsearchcapabilities" class="tsd-kind-icon">Get<wbr>Search<wbr>Capabilities</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#getshareindexinprogress" class="tsd-kind-icon">Get<wbr>Share<wbr>Index<wbr>InProgress</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#getsortcapabilities" class="tsd-kind-icon">Get<wbr>Sort<wbr>Capabilities</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#getsystemupdateid" class="tsd-kind-icon">Get<wbr>System<wbr>UpdateID</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#parseevent" class="tsd-kind-icon">Parse<wbr>Event</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#refreshshareindex" class="tsd-kind-icon">Refresh<wbr>Share<wbr>Index</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#requestresort" class="tsd-kind-icon">Request<wbr>Resort</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#setbrowseable" class="tsd-kind-icon">Set<wbr>Browseable</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#soaprequest" class="tsd-kind-icon">Soap<wbr>Request</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#soaprequestnoresponse" class="tsd-kind-icon">Soap<wbr>Request<wbr>NoResponse</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#soaprequestwithbody" class="tsd-kind-icon">Soap<wbr>Request<wbr>With<wbr>Body</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#soaprequestwithbodynoresponse" class="tsd-kind-icon">Soap<wbr>Request<wbr>With<wbr>Body<wbr>NoResponse</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_content_directory_service_.contentdirectoryservicebase.html#updateobject" class="tsd-kind-icon">Update<wbr>Object</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
+		<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<h2>Constructors</h2>
+			<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+				<a name="constructor" class="tsd-anchor"></a>
+				<h3>constructor</h3>
+				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Content<wbr>Directory<wbr>Service<wbr>Base<span class="tsd-signature-symbol">(</span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, port<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, uuid<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_services_content_directory_service_.contentdirectoryservicebase.html" class="tsd-signature-type">ContentDirectoryServiceBase</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#constructor">constructor</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L63">src/services/base-service.ts:63</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Creates an instance of the implemented service.</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>host: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The ip or the domainname of the sonos speaker</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> port: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1400</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> uuid: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = Guid.create().toString()</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="_services_content_directory_service_.contentdirectoryservicebase.html" class="tsd-signature-type">ContentDirectoryServiceBase</a></h4>
+					</li>
+				</ul>
+			</section>
+		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="queueid" class="tsd-anchor"></a>
-				<h3>QueueID</h3>
-				<div class="tsd-signature tsd-kind-icon">QueueID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<a name="controlurl" class="tsd-anchor"></a>
+				<h3>control<wbr>Url</h3>
+				<div class="tsd-signature tsd-kind-icon">control<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;/MediaServer/ContentDirectory/Control&quot;</span></div>
 				<aside class="tsd-sources">
+					<p>Overrides <a href="_services_base_service_.baseservice.html">BaseService</a>.<a href="_services_base_service_.baseservice.html#controlurl">controlUrl</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/queue.service.ts#L75">src/services/queue.service.ts:75</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L14">src/services/content-directory.service.ts:14</a></li>
 					</ul>
 				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<a name="eventsuburl" class="tsd-anchor"></a>
+				<h3>event<wbr>Sub<wbr>Url</h3>
+				<div class="tsd-signature tsd-kind-icon">event<wbr>Sub<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;/MediaServer/ContentDirectory/Event&quot;</span></div>
+				<aside class="tsd-sources">
+					<p>Overrides <a href="_services_base_service_.baseservice.html">BaseService</a>.<a href="_services_base_service_.baseservice.html#eventsuburl">eventSubUrl</a></p>
+					<ul>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L15">src/services/content-directory.service.ts:15</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<a name="host" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> host</h3>
+				<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#host">host</a></p>
+					<ul>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L24">src/services/base-service.ts:24</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<a name="port" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> port</h3>
+				<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<aside class="tsd-sources">
+					<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#port">port</a></p>
+					<ul>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L25">src/services/base-service.ts:25</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<a name="scpurl" class="tsd-anchor"></a>
+				<h3>scp<wbr>Url</h3>
+				<div class="tsd-signature tsd-kind-icon">scp<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;/xml/ContentDirectory1.xml&quot;</span></div>
+				<aside class="tsd-sources">
+					<p>Overrides <a href="_services_base_service_.baseservice.html">BaseService</a>.<a href="_services_base_service_.baseservice.html#scpurl">scpUrl</a></p>
+					<ul>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L16">src/services/content-directory.service.ts:16</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<a name="servicenane" class="tsd-anchor"></a>
+				<h3>service<wbr>Nane</h3>
+				<div class="tsd-signature tsd-kind-icon">service<wbr>Nane<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;ContentDirectory&quot;</span></div>
+				<aside class="tsd-sources">
+					<p>Overrides <a href="_services_base_service_.baseservice.html">BaseService</a>.<a href="_services_base_service_.baseservice.html#servicenane">serviceNane</a></p>
+					<ul>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L13">src/services/content-directory.service.ts:13</a></li>
+					</ul>
+				</aside>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<h2>Accessors</h2>
+			<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+				<a name="events" class="tsd-anchor"></a>
+				<h3>Events</h3>
+				<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> Events<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventEmitter</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#events">Events</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L294">src/services/base-service.ts:294</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Events allowes you access to the events generated by this service.</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>description</dt>
+								<dd><p>The service will automatically subscribe to events when you first use this.</p>
+								</dd>
+								<dt>readonly</dt>
+								<dd></dd>
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">EventEmitter</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<a name="debug" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> debug</h3>
+				<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> debug<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Debugger</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#debug">debug</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L27">src/services/base-service.ts:27</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Debugger</span></h4>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Methods</h2>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="browse" class="tsd-anchor"></a>
+				<h3>Browse</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Browse<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>BrowseFlag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Filter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>RequestedCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>SortCriteria<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>StartingIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_models_browse_response_.browseresponse.html" class="tsd-signature-type">BrowseResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L29">src/services/content-directory.service.ts:29</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Browse for content, see BrowseParsed for a better experience.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>BrowseFlag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Filter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>RequestedCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>SortCriteria<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>StartingIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Browse<wbr>Flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>How to browse [ BrowseMetadata,BrowseDirectChildren ]</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Filter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Which fields should be returned &#39;*&#39; for all.</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>The search query, [&#39;A:ARTIST&#39;,&#39;A:ALBUMARTIST&#39;,&#39;A:ALBUM&#39;,&#39;A:GENRE&#39;,&#39;A:COMPOSER&#39;,&#39;A:TRACKS&#39;,&#39;A:PLAYLISTS&#39;] with optionally &#39;:search+query&#39; behind it.</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Requested<wbr>Count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Paging, number of items</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Sort<wbr>Criteria<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Sort the results based on metadata fields. &#39;+upnp:artist,+dc:title&#39; for sorting on artist then on title.</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Starting<wbr>Index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Paging, where to start</p>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_models_browse_response_.browseresponse.html" class="tsd-signature-type">BrowseResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="createobject" class="tsd-anchor"></a>
+				<h3>Create<wbr>Object</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Create<wbr>Object<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>ContainerID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Elements<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.createobjectresponse.html" class="tsd-signature-type">CreateObjectResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L32">src/services/content-directory.service.ts:32</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>ContainerID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Elements<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>ContainerID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Elements<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.createobjectresponse.html" class="tsd-signature-type">CreateObjectResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="destroyobject" class="tsd-anchor"></a>
+				<h3>Destroy<wbr>Object</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Destroy<wbr>Object<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L35">src/services/content-directory.service.ts:35</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="findprefix" class="tsd-anchor"></a>
+				<h3>Find<wbr>Prefix</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Find<wbr>Prefix<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.findprefixresponse.html" class="tsd-signature-type">FindPrefixResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L38">src/services/content-directory.service.ts:38</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.findprefixresponse.html" class="tsd-signature-type">FindPrefixResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="getalbumartistdisplayoption" class="tsd-anchor"></a>
+				<h3>Get<wbr>Album<wbr>Artist<wbr>Display<wbr>Option</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Album<wbr>Artist<wbr>Display<wbr>Option<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getalbumartistdisplayoptionresponse.html" class="tsd-signature-type">GetAlbumArtistDisplayOptionResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L41">src/services/content-directory.service.ts:41</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getalbumartistdisplayoptionresponse.html" class="tsd-signature-type">GetAlbumArtistDisplayOptionResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="getallprefixlocations" class="tsd-anchor"></a>
+				<h3>Get<wbr>All<wbr>Prefix<wbr>Locations</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>All<wbr>Prefix<wbr>Locations<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getallprefixlocationsresponse.html" class="tsd-signature-type">GetAllPrefixLocationsResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L44">src/services/content-directory.service.ts:44</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getallprefixlocationsresponse.html" class="tsd-signature-type">GetAllPrefixLocationsResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="getbrowseable" class="tsd-anchor"></a>
+				<h3>Get<wbr>Browseable</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Browseable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getbrowseableresponse.html" class="tsd-signature-type">GetBrowseableResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L47">src/services/content-directory.service.ts:47</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getbrowseableresponse.html" class="tsd-signature-type">GetBrowseableResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="getlastindexchange" class="tsd-anchor"></a>
+				<h3>Get<wbr>Last<wbr>Index<wbr>Change</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Last<wbr>Index<wbr>Change<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getlastindexchangeresponse.html" class="tsd-signature-type">GetLastIndexChangeResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L50">src/services/content-directory.service.ts:50</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getlastindexchangeresponse.html" class="tsd-signature-type">GetLastIndexChangeResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="getsearchcapabilities" class="tsd-anchor"></a>
+				<h3>Get<wbr>Search<wbr>Capabilities</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Search<wbr>Capabilities<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getsearchcapabilitiesresponse.html" class="tsd-signature-type">GetSearchCapabilitiesResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L53">src/services/content-directory.service.ts:53</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getsearchcapabilitiesresponse.html" class="tsd-signature-type">GetSearchCapabilitiesResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="getshareindexinprogress" class="tsd-anchor"></a>
+				<h3>Get<wbr>Share<wbr>Index<wbr>InProgress</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Share<wbr>Index<wbr>InProgress<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getshareindexinprogressresponse.html" class="tsd-signature-type">GetShareIndexInProgressResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L56">src/services/content-directory.service.ts:56</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getshareindexinprogressresponse.html" class="tsd-signature-type">GetShareIndexInProgressResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="getsortcapabilities" class="tsd-anchor"></a>
+				<h3>Get<wbr>Sort<wbr>Capabilities</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Sort<wbr>Capabilities<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getsortcapabilitiesresponse.html" class="tsd-signature-type">GetSortCapabilitiesResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L59">src/services/content-directory.service.ts:59</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getsortcapabilitiesresponse.html" class="tsd-signature-type">GetSortCapabilitiesResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="getsystemupdateid" class="tsd-anchor"></a>
+				<h3>Get<wbr>System<wbr>UpdateID</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>System<wbr>UpdateID<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getsystemupdateidresponse.html" class="tsd-signature-type">GetSystemUpdateIDResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L62">src/services/content-directory.service.ts:62</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_content_directory_service_.getsystemupdateidresponse.html" class="tsd-signature-type">GetSystemUpdateIDResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<a name="parseevent" class="tsd-anchor"></a>
+				<h3>Parse<wbr>Event</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<li class="tsd-signature tsd-kind-icon">Parse<wbr>Event<span class="tsd-signature-symbol">(</span>xml<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#parseevent">ParseEvent</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L390">src/services/base-service.ts:390</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Parse Event is used by the SonosEventListener and shouldn&#39;t be used by other people</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>xml: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Event request body, received from the SonosEventListener</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="refreshshareindex" class="tsd-anchor"></a>
+				<h3>Refresh<wbr>Share<wbr>Index</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Refresh<wbr>Share<wbr>Index<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>AlbumArtistDisplayOption<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L65">src/services/content-directory.service.ts:65</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>AlbumArtistDisplayOption<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Album<wbr>Artist<wbr>Display<wbr>Option<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="requestresort" class="tsd-anchor"></a>
+				<h3>Request<wbr>Resort</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Request<wbr>Resort<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>SortOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L68">src/services/content-directory.service.ts:68</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>SortOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Sort<wbr>Order<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="setbrowseable" class="tsd-anchor"></a>
+				<h3>Set<wbr>Browseable</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Set<wbr>Browseable<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Browseable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L71">src/services/content-directory.service.ts:71</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>Browseable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Browseable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
+				<a name="soaprequest" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> Soap<wbr>Request</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
+					<li class="tsd-signature tsd-kind-icon">Soap<wbr>Request&lt;TResponse&gt;<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#soaprequest">SoapRequest</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L87">src/services/base-service.ts:87</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>SoapRequest will do a request that expects a Response</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>template</dt>
+								<dd><p>TResponse</p>
+								</dd>
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>TResponse</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>action: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The action to call</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>Will return a promise of the requested response</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<a name="soaprequestnoresponse" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> Soap<wbr>Request<wbr>NoResponse</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<li class="tsd-signature tsd-kind-icon">Soap<wbr>Request<wbr>NoResponse<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#soaprequestnoresponse">SoapRequestNoResponse</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L116">src/services/base-service.ts:116</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>SoapRequestNoResponse will do a request where it doesn&#39;t expect a Response</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>action: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The action to call</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>boolean returns true if command is send succesfull and sonos responded with ok</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
+				<a name="soaprequestwithbody" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> Soap<wbr>Request<wbr>With<wbr>Body</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
+					<li class="tsd-signature tsd-kind-icon">Soap<wbr>Request<wbr>With<wbr>Body&lt;TBody, TResponse&gt;<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TBody</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#soaprequestwithbody">SoapRequestWithBody</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L103">src/services/base-service.ts:103</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>SoapRequestWithBody will do a request that expects a Response</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>template</dt>
+								<dd><p>TRequest</p>
+								</dd>
+								<dt>template</dt>
+								<dd><p>TResponse</p>
+								</dd>
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>TBody</h4>
+							</li>
+							<li>
+								<h4>TResponse</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>action: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The action to call</p>
+								</div>
+							</li>
+							<li>
+								<h5>body: <span class="tsd-signature-type">TBody</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The request body parameters</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
+				<a name="soaprequestwithbodynoresponse" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> Soap<wbr>Request<wbr>With<wbr>Body<wbr>NoResponse</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
+					<li class="tsd-signature tsd-kind-icon">Soap<wbr>Request<wbr>With<wbr>Body<wbr>NoResponse&lt;TBody&gt;<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TBody</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#soaprequestwithbodynoresponse">SoapRequestWithBodyNoResponse</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L132">src/services/base-service.ts:132</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>SoapRequestWithBodyNoResponse will do a request where it doesn&#39;t expect a Response</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>template</dt>
+								<dd><p>TBody</p>
+								</dd>
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>TBody</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>action: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The action to call</p>
+								</div>
+							</li>
+							<li>
+								<h5>body: <span class="tsd-signature-type">TBody</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The request body parameters</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>boolean returns true if command is send succesfull and sonos responded with ok</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="updateobject" class="tsd-anchor"></a>
+				<h3>Update<wbr>Object</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Update<wbr>Object<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>CurrentTagValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>NewTagValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/content-directory.service.ts#L74">src/services/content-directory.service.ts:74</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>CurrentTagValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>NewTagValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Current<wbr>Tag<wbr>Value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>New<wbr>Tag<wbr>Value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
 			</section>
 		</section>
 		<footer class="with-border-bottom">

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@svrooij/sonos - v0.0.0-development | @svrooij/sonos - v0.0.0-development</title>
+	<title>@svrooij/sonos | @svrooij/sonos</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2335,7 +2335,7 @@ img {
 		<div class="container">
 			<div class="table-wrap">
 				<div class="table-cell">
-					<strong><a href="index.html">@svrooij/sonos - v0.0.0-development</a></strong>
+					<strong><a href="index.html">@svrooij/sonos</a></strong>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -2383,6 +2383,7 @@ img {
 				<h2>Usage</h2>
 			</a>
 			<p>To use the library just add it to your project. <code>npm install @svrooij/sonos</code>. And start using it. This library isn&#39;t meant to be used by itself, as you see in the <a href="./examples">examples</a> you still need to use node (or typescript).</p>
+			<p><a href="https://svrooij.github.io/node-sonos-ts/#sonosmanager-and-logical-devices"><img src="./img/book.png" alt="Documentation"></a></p>
 			<p>You&#39;ll need to get the <a href="https://svrooij.github.io/node-sonos-ts/classes/_sonos_device_.sonosdevice.html"><strong>SonosDevice</strong></a> by one of the <a href="#sonosmanager-and-logical-devices">methods below</a>, and start using the extra <a href="#extra-functionality">functionality</a>, the <a href="#shortcuts">shortcuts</a> or the <a href="#exposed-services">exposed services</a>. There also is an <a href="#events">Eventlistener</a> that allows you to subscribe to all the events your sonos sends out. This library allows you to do <strong>everything</strong> you can do with the Sonos application (except search external <a href="./src/musicservices">music services</a> :cry:).</p>
 			<pre><code class="language-JavaScript"><span class="hljs-keyword">const</span> SonosManager = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@svrooij/sonos'</span>).SonosManager
 <span class="hljs-keyword">const</span> manager = <span class="hljs-keyword">new</span> SonosManager()
@@ -2398,8 +2399,8 @@ manager.InitializeWithDiscovery(<span class="hljs-number">10</span>) <span class
 			<p>These methods aren&#39;t possible with the generated services. This is added functionality:</p>
 			<ul>
 				<li><strong>.AddUriToQueue(&#39;spotify:track:0GiWi4EkPduFWHQyhiKpRB&#39;)</strong> - Add a track to be next track in the queue, metadata is guessed :musical_note:.</li>
-				<li><strong>.AlarmList()</strong> - List all your alarms :alarm_clock:</li>
-				<li><strong>.AlarmPatch({ ID: 1, ... })</strong> - Update some properties of one of your alarms :clock330:.</li>
+				<li><strong>.AlarmClockService.ListAndParseAlarms()</strong> - List all your alarms :alarm_clock:</li>
+				<li><strong>.AlarmClockService.PatchAlarm({ ID: 1, ... })</strong> - Update some properties of one of your alarms :clock330:.</li>
 				<li><strong>.JoinGroup(&#39;Office&#39;)</strong> - Join an other device by it&#39;s name. Will lookup the correct coordinator :speaker:.</li>
 				<li><strong>.PlayNotification({})</strong> - Play a single url and revert back to previous music source (playlist/radiostream) :bell:. See <a href="./examples/play-notification.js">play-notification.js</a></li>
 				<li><strong>.PlayTTS({})</strong> - Generate mp3 based on text, play and revert back to previous music source :mega:. See <a href="#text-to-speech">Text-to-Speech</a></li>
@@ -2436,8 +2437,6 @@ manager.InitializeWithDiscovery(<span class="hljs-number">10</span>) <span class
 			</a>
 			<p>You can also browse content, see <a href="./examples/content.js">content.js</a>, these are actually all shortcuts to the browse method.</p>
 			<ul>
-				<li><strong>.Browse({...})</strong> - Browse local content.</li>
-				<li><strong>.BrowseWithDefaults({...})</strong> - Browse local content by only specifying the ObjectID, the rest will be set to default.</li>
 				<li><strong>.GetFavoriteRadioShows({...})</strong> - Get your favorite radio shows</li>
 				<li><strong>.GetFavoriteRadioStations({...})</strong> - Get your favorite radio stations</li>
 				<li><strong>.GetFavorites({...})</strong> - Get your favorite songs</li>
@@ -2534,7 +2533,7 @@ sonos.ExecuteCommand(<span class="hljs-string">'SendSomeLove'</span>).catch(<spa
 			<a href="#sonosmanager-and-logical-devices" id="sonosmanager-and-logical-devices" style="color: inherit; text-decoration: none;">
 				<h2>SonosManager and logical devices</h2>
 			</a>
-			<p>This library has a <a href="https://svrooij.github.io/node-sonos-ts/classes/_sonos_manager_.sonosmanager.html"><strong>SonosManager</strong></a> that resolves all your sonos groups for you. It also manages group updates. Every <strong>SonosDevice</strong> created by this manager has some extra properties that can be used by your application. These properties will automatically be updated on changes.</p>
+			<p>This library has a <a href="https://svrooij.github.io/node-sonos-ts/classes/_sonos_manager_.sonosmanager.html"><strong>SonosManager</strong></a> that resolves all your sonos groups for you. It also manages group updates. Every <a href="https://svrooij.github.io/node-sonos-ts/classes/_sonos_device_.sonosdevice.html"><strong>SonosDevice</strong></a> created by this manager has some extra properties that can be used by your application. These properties will automatically be updated on changes.</p>
 			<ul>
 				<li><strong>.Coordinator</strong> - Point to the devices&#39; group coordinator (or to itself when it&#39;s the coordinator).</li>
 				<li><strong>.GroupName</strong> - The name of the group this device is in. eg &#39;Kitchen + 2&#39;</li>

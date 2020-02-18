@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CreateQueueResponse | @svrooij/sonos</title>
+	<title>AlarmClockServiceBase | @svrooij/sonos</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2369,11 +2369,32 @@ img {
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
+		<section class="tsd-panel tsd-comment">
+			<div class="tsd-comment tsd-typography">
+				<div class="lead">
+					<p>Control the sonos alarms</p>
+				</div>
+				<dl class="tsd-comment-tags">
+					<dt>export</dt>
+					<dd></dd>
+				</dl>
+			</div>
+		</section>
 		<section class="tsd-panel tsd-hierarchy">
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<span class="target">CreateQueueResponse</span>
+					<a href="_services_base_service_.baseservice.html" class="tsd-signature-type">BaseService</a>
+					<ul class="tsd-hierarchy">
+						<li>
+							<span class="target">AlarmClockServiceBase</span>
+							<ul class="tsd-hierarchy">
+								<li>
+									<a href="_services_alarm_clock_service_.alarmclockservice.html" class="tsd-signature-type">AlarmClockService</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</section>
@@ -2381,26 +2402,1016 @@ img {
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
+					<section class="tsd-index-section tsd-is-inherited">
+						<h3>Constructors</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#constructor" class="tsd-kind-icon">constructor</a></li>
+						</ul>
+					</section>
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_services_queue_service_.createqueueresponse.html#queueid" class="tsd-kind-icon">QueueID</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#controlurl" class="tsd-kind-icon">control<wbr>Url</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#eventsuburl" class="tsd-kind-icon">event<wbr>Sub<wbr>Url</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#host" class="tsd-kind-icon">host</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#port" class="tsd-kind-icon">port</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#scpurl" class="tsd-kind-icon">scp<wbr>Url</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#servicenane" class="tsd-kind-icon">service<wbr>Nane</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section tsd-is-inherited">
+						<h3>Accessors</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#events" class="tsd-kind-icon">Events</a></li>
+							<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#debug" class="tsd-kind-icon">debug</a></li>
+						</ul>
+					</section>
+					<section class="tsd-index-section ">
+						<h3>Methods</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#createalarm" class="tsd-kind-icon">Create<wbr>Alarm</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#destroyalarm" class="tsd-kind-icon">Destroy<wbr>Alarm</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#getdailyindexrefreshtime" class="tsd-kind-icon">Get<wbr>Daily<wbr>Index<wbr>Refresh<wbr>Time</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#getformat" class="tsd-kind-icon">Get<wbr>Format</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#gethouseholdtimeatstamp" class="tsd-kind-icon">Get<wbr>Household<wbr>Time<wbr>AtStamp</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#gettimenow" class="tsd-kind-icon">Get<wbr>Time<wbr>Now</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#gettimeserver" class="tsd-kind-icon">Get<wbr>Time<wbr>Server</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#gettimezone" class="tsd-kind-icon">Get<wbr>Time<wbr>Zone</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#gettimezoneandrule" class="tsd-kind-icon">Get<wbr>Time<wbr>Zone<wbr>And<wbr>Rule</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#gettimezonerule" class="tsd-kind-icon">Get<wbr>Time<wbr>Zone<wbr>Rule</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#listalarms" class="tsd-kind-icon">List<wbr>Alarms</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#parseevent" class="tsd-kind-icon">Parse<wbr>Event</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#setdailyindexrefreshtime" class="tsd-kind-icon">Set<wbr>Daily<wbr>Index<wbr>Refresh<wbr>Time</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#setformat" class="tsd-kind-icon">Set<wbr>Format</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#settimenow" class="tsd-kind-icon">Set<wbr>Time<wbr>Now</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#settimeserver" class="tsd-kind-icon">Set<wbr>Time<wbr>Server</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#settimezone" class="tsd-kind-icon">Set<wbr>Time<wbr>Zone</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#soaprequest" class="tsd-kind-icon">Soap<wbr>Request</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#soaprequestnoresponse" class="tsd-kind-icon">Soap<wbr>Request<wbr>NoResponse</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#soaprequestwithbody" class="tsd-kind-icon">Soap<wbr>Request<wbr>With<wbr>Body</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#soaprequestwithbodynoresponse" class="tsd-kind-icon">Soap<wbr>Request<wbr>With<wbr>Body<wbr>NoResponse</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_services_alarm_clock_service_.alarmclockservicebase.html#updatealarm" class="tsd-kind-icon">Update<wbr>Alarm</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
+		<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<h2>Constructors</h2>
+			<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+				<a name="constructor" class="tsd-anchor"></a>
+				<h3>constructor</h3>
+				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Alarm<wbr>Clock<wbr>Service<wbr>Base<span class="tsd-signature-symbol">(</span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, port<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, uuid<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_services_alarm_clock_service_.alarmclockservicebase.html" class="tsd-signature-type">AlarmClockServiceBase</a></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#constructor">constructor</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L63">src/services/base-service.ts:63</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Creates an instance of the implemented service.</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>host: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The ip or the domainname of the sonos speaker</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> port: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1400</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> uuid: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = Guid.create().toString()</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <a href="_services_alarm_clock_service_.alarmclockservicebase.html" class="tsd-signature-type">AlarmClockServiceBase</a></h4>
+					</li>
+				</ul>
+			</section>
+		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="queueid" class="tsd-anchor"></a>
-				<h3>QueueID</h3>
-				<div class="tsd-signature tsd-kind-icon">QueueID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<a name="controlurl" class="tsd-anchor"></a>
+				<h3>control<wbr>Url</h3>
+				<div class="tsd-signature tsd-kind-icon">control<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;/AlarmClock/Control&quot;</span></div>
 				<aside class="tsd-sources">
+					<p>Overrides <a href="_services_base_service_.baseservice.html">BaseService</a>.<a href="_services_base_service_.baseservice.html#controlurl">controlUrl</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/queue.service.ts#L75">src/services/queue.service.ts:75</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L14">src/services/alarm-clock.service.ts:14</a></li>
 					</ul>
 				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<a name="eventsuburl" class="tsd-anchor"></a>
+				<h3>event<wbr>Sub<wbr>Url</h3>
+				<div class="tsd-signature tsd-kind-icon">event<wbr>Sub<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;/AlarmClock/Event&quot;</span></div>
+				<aside class="tsd-sources">
+					<p>Overrides <a href="_services_base_service_.baseservice.html">BaseService</a>.<a href="_services_base_service_.baseservice.html#eventsuburl">eventSubUrl</a></p>
+					<ul>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L15">src/services/alarm-clock.service.ts:15</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<a name="host" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> host</h3>
+				<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#host">host</a></p>
+					<ul>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L24">src/services/base-service.ts:24</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<a name="port" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> port</h3>
+				<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<aside class="tsd-sources">
+					<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#port">port</a></p>
+					<ul>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L25">src/services/base-service.ts:25</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<a name="scpurl" class="tsd-anchor"></a>
+				<h3>scp<wbr>Url</h3>
+				<div class="tsd-signature tsd-kind-icon">scp<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;/xml/AlarmClock1.xml&quot;</span></div>
+				<aside class="tsd-sources">
+					<p>Overrides <a href="_services_base_service_.baseservice.html">BaseService</a>.<a href="_services_base_service_.baseservice.html#scpurl">scpUrl</a></p>
+					<ul>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L16">src/services/alarm-clock.service.ts:16</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+				<a name="servicenane" class="tsd-anchor"></a>
+				<h3>service<wbr>Nane</h3>
+				<div class="tsd-signature tsd-kind-icon">service<wbr>Nane<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;AlarmClock&quot;</span></div>
+				<aside class="tsd-sources">
+					<p>Overrides <a href="_services_base_service_.baseservice.html">BaseService</a>.<a href="_services_base_service_.baseservice.html#servicenane">serviceNane</a></p>
+					<ul>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L13">src/services/alarm-clock.service.ts:13</a></li>
+					</ul>
+				</aside>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<h2>Accessors</h2>
+			<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+				<a name="events" class="tsd-anchor"></a>
+				<h3>Events</h3>
+				<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> Events<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventEmitter</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#events">Events</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L294">src/services/base-service.ts:294</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Events allowes you access to the events generated by this service.</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>description</dt>
+								<dd><p>The service will automatically subscribe to events when you first use this.</p>
+								</dd>
+								<dt>readonly</dt>
+								<dd></dd>
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">EventEmitter</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<a name="debug" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> debug</h3>
+				<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> debug<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Debugger</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#debug">debug</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L27">src/services/base-service.ts:27</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Debugger</span></h4>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Methods</h2>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="createalarm" class="tsd-anchor"></a>
+				<h3>Create<wbr>Alarm</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Create<wbr>Alarm<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Duration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>IncludeLinkedZones<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>PlayMode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>ProgramMetaData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_models_track_.track.html" class="tsd-signature-type">Track</a><span class="tsd-signature-symbol">; </span>ProgramURI<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Recurrence<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>RoomUUID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>StartLocalTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Volume<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.createalarmresponse.html" class="tsd-signature-type">CreateAlarmResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L33">src/services/alarm-clock.service.ts:33</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Create a single alarm, all properties are required</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>Duration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>IncludeLinkedZones<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>PlayMode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>ProgramMetaData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_models_track_.track.html" class="tsd-signature-type">Track</a><span class="tsd-signature-symbol">; </span>ProgramURI<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Recurrence<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>RoomUUID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>StartLocalTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Volume<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Duration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>The duration as hh:mm:ss</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Alarm enabled after creation</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Include<wbr>Linked<wbr>Zones<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Should grouped palyers also play the alarm?</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Play<wbr>Mode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Alarm playmode [ NORMAL,REPEAT_ALL,SHUFFLE_NOREPEAT,SHUFFLE ]</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Program<wbr>Meta<wbr>Data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_models_track_.track.html" class="tsd-signature-type">Track</a></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>The sound metadata, can be empty string</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>ProgramURI<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>The sound uri</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Recurrence<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Repeat this alarm on [ ONCE,WEEKDAYS,WEEKENDS,DAILY ]</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>RoomUUID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>The UUID of the speaker you want this alarm for</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Start<wbr>Local<wbr>Time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>The starttime as hh:mm:ss</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Volume<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Volume between 0 and 100</p>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.createalarmresponse.html" class="tsd-signature-type">CreateAlarmResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="destroyalarm" class="tsd-anchor"></a>
+				<h3>Destroy<wbr>Alarm</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Destroy<wbr>Alarm<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>ID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L41">src/services/alarm-clock.service.ts:41</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Delete an alarm</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>ID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>ID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>The Alarm ID, see ListAndParseAlarms</p>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="getdailyindexrefreshtime" class="tsd-anchor"></a>
+				<h3>Get<wbr>Daily<wbr>Index<wbr>Refresh<wbr>Time</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Daily<wbr>Index<wbr>Refresh<wbr>Time<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.getdailyindexrefreshtimeresponse.html" class="tsd-signature-type">GetDailyIndexRefreshTimeResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L44">src/services/alarm-clock.service.ts:44</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.getdailyindexrefreshtimeresponse.html" class="tsd-signature-type">GetDailyIndexRefreshTimeResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="getformat" class="tsd-anchor"></a>
+				<h3>Get<wbr>Format</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Format<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.getformatresponse.html" class="tsd-signature-type">GetFormatResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L47">src/services/alarm-clock.service.ts:47</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.getformatresponse.html" class="tsd-signature-type">GetFormatResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="gethouseholdtimeatstamp" class="tsd-anchor"></a>
+				<h3>Get<wbr>Household<wbr>Time<wbr>AtStamp</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Household<wbr>Time<wbr>AtStamp<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>TimeStamp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.gethouseholdtimeatstampresponse.html" class="tsd-signature-type">GetHouseholdTimeAtStampResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L50">src/services/alarm-clock.service.ts:50</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>TimeStamp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Time<wbr>Stamp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.gethouseholdtimeatstampresponse.html" class="tsd-signature-type">GetHouseholdTimeAtStampResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="gettimenow" class="tsd-anchor"></a>
+				<h3>Get<wbr>Time<wbr>Now</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Time<wbr>Now<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.gettimenowresponse.html" class="tsd-signature-type">GetTimeNowResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L53">src/services/alarm-clock.service.ts:53</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.gettimenowresponse.html" class="tsd-signature-type">GetTimeNowResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="gettimeserver" class="tsd-anchor"></a>
+				<h3>Get<wbr>Time<wbr>Server</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Time<wbr>Server<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.gettimeserverresponse.html" class="tsd-signature-type">GetTimeServerResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L56">src/services/alarm-clock.service.ts:56</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.gettimeserverresponse.html" class="tsd-signature-type">GetTimeServerResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="gettimezone" class="tsd-anchor"></a>
+				<h3>Get<wbr>Time<wbr>Zone</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Time<wbr>Zone<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.gettimezoneresponse.html" class="tsd-signature-type">GetTimeZoneResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L59">src/services/alarm-clock.service.ts:59</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.gettimezoneresponse.html" class="tsd-signature-type">GetTimeZoneResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="gettimezoneandrule" class="tsd-anchor"></a>
+				<h3>Get<wbr>Time<wbr>Zone<wbr>And<wbr>Rule</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Time<wbr>Zone<wbr>And<wbr>Rule<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.gettimezoneandruleresponse.html" class="tsd-signature-type">GetTimeZoneAndRuleResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L62">src/services/alarm-clock.service.ts:62</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.gettimezoneandruleresponse.html" class="tsd-signature-type">GetTimeZoneAndRuleResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="gettimezonerule" class="tsd-anchor"></a>
+				<h3>Get<wbr>Time<wbr>Zone<wbr>Rule</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Get<wbr>Time<wbr>Zone<wbr>Rule<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.gettimezoneruleresponse.html" class="tsd-signature-type">GetTimeZoneRuleResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L65">src/services/alarm-clock.service.ts:65</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>Index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.gettimezoneruleresponse.html" class="tsd-signature-type">GetTimeZoneRuleResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="listalarms" class="tsd-anchor"></a>
+				<h3>List<wbr>Alarms</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">List<wbr>Alarms<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.listalarmsresponse.html" class="tsd-signature-type">ListAlarmsResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L71">src/services/alarm-clock.service.ts:71</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Get the AlarmList as XML, use ListAndParseAlarms for parsed version</p>
+							</div>
+						</div>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_alarm_clock_service_.listalarmsresponse.html" class="tsd-signature-type">ListAlarmsResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<a name="parseevent" class="tsd-anchor"></a>
+				<h3>Parse<wbr>Event</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<li class="tsd-signature tsd-kind-icon">Parse<wbr>Event<span class="tsd-signature-symbol">(</span>xml<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#parseevent">ParseEvent</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L390">src/services/base-service.ts:390</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Parse Event is used by the SonosEventListener and shouldn&#39;t be used by other people</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>xml: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Event request body, received from the SonosEventListener</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="setdailyindexrefreshtime" class="tsd-anchor"></a>
+				<h3>Set<wbr>Daily<wbr>Index<wbr>Refresh<wbr>Time</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Set<wbr>Daily<wbr>Index<wbr>Refresh<wbr>Time<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>DesiredDailyIndexRefreshTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L74">src/services/alarm-clock.service.ts:74</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>DesiredDailyIndexRefreshTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Desired<wbr>Daily<wbr>Index<wbr>Refresh<wbr>Time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="setformat" class="tsd-anchor"></a>
+				<h3>Set<wbr>Format</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Set<wbr>Format<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>DesiredDateFormat<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>DesiredTimeFormat<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L77">src/services/alarm-clock.service.ts:77</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>DesiredDateFormat<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>DesiredTimeFormat<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Desired<wbr>Date<wbr>Format<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Desired<wbr>Time<wbr>Format<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="settimenow" class="tsd-anchor"></a>
+				<h3>Set<wbr>Time<wbr>Now</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Set<wbr>Time<wbr>Now<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>DesiredTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>TimeZoneForDesiredTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L80">src/services/alarm-clock.service.ts:80</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>DesiredTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>TimeZoneForDesiredTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Desired<wbr>Time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Time<wbr>Zone<wbr>For<wbr>Desired<wbr>Time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="settimeserver" class="tsd-anchor"></a>
+				<h3>Set<wbr>Time<wbr>Server</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Set<wbr>Time<wbr>Server<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>DesiredTimeServer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L83">src/services/alarm-clock.service.ts:83</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>DesiredTimeServer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Desired<wbr>Time<wbr>Server<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="settimezone" class="tsd-anchor"></a>
+				<h3>Set<wbr>Time<wbr>Zone</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Set<wbr>Time<wbr>Zone<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>AutoAdjustDst<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>Index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L86">src/services/alarm-clock.service.ts:86</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>AutoAdjustDst<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>Index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Auto<wbr>Adjust<wbr>Dst<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
+				<a name="soaprequest" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> Soap<wbr>Request</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
+					<li class="tsd-signature tsd-kind-icon">Soap<wbr>Request&lt;TResponse&gt;<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#soaprequest">SoapRequest</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L87">src/services/base-service.ts:87</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>SoapRequest will do a request that expects a Response</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>template</dt>
+								<dd><p>TResponse</p>
+								</dd>
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>TResponse</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>action: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The action to call</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>Will return a promise of the requested response</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<a name="soaprequestnoresponse" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> Soap<wbr>Request<wbr>NoResponse</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<li class="tsd-signature tsd-kind-icon">Soap<wbr>Request<wbr>NoResponse<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#soaprequestnoresponse">SoapRequestNoResponse</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L116">src/services/base-service.ts:116</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>SoapRequestNoResponse will do a request where it doesn&#39;t expect a Response</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>action: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The action to call</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>boolean returns true if command is send succesfull and sonos responded with ok</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
+				<a name="soaprequestwithbody" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> Soap<wbr>Request<wbr>With<wbr>Body</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
+					<li class="tsd-signature tsd-kind-icon">Soap<wbr>Request<wbr>With<wbr>Body&lt;TBody, TResponse&gt;<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TBody</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#soaprequestwithbody">SoapRequestWithBody</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L103">src/services/base-service.ts:103</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>SoapRequestWithBody will do a request that expects a Response</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>template</dt>
+								<dd><p>TRequest</p>
+								</dd>
+								<dt>template</dt>
+								<dd><p>TResponse</p>
+								</dd>
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>TBody</h4>
+							</li>
+							<li>
+								<h4>TResponse</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>action: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The action to call</p>
+								</div>
+							</li>
+							<li>
+								<h5>body: <span class="tsd-signature-type">TBody</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The request body parameters</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
+				<a name="soaprequestwithbodynoresponse" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagProtected">Protected</span> Soap<wbr>Request<wbr>With<wbr>Body<wbr>NoResponse</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
+					<li class="tsd-signature tsd-kind-icon">Soap<wbr>Request<wbr>With<wbr>Body<wbr>NoResponse&lt;TBody&gt;<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TBody</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html">ZoneGroupTopologyServiceBase</a>.<a href="_services_zone_group_topology_service_.zonegrouptopologyservicebase.html#soaprequestwithbodynoresponse">SoapRequestWithBodyNoResponse</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/base-service.ts#L132">src/services/base-service.ts:132</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>SoapRequestWithBodyNoResponse will do a request where it doesn&#39;t expect a Response</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>template</dt>
+								<dd><p>TBody</p>
+								</dd>
+								<dt>memberof</dt>
+								<dd><p>BaseService</p>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-type-parameters-title">Type parameters</h4>
+						<ul class="tsd-type-parameters">
+							<li>
+								<h4>TBody</h4>
+							</li>
+						</ul>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>action: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The action to call</p>
+								</div>
+							</li>
+							<li>
+								<h5>body: <span class="tsd-signature-type">TBody</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The request body parameters</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>boolean returns true if command is send succesfull and sonos responded with ok</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="updatealarm" class="tsd-anchor"></a>
+				<h3>Update<wbr>Alarm</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">Update<wbr>Alarm<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Duration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>ID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>IncludeLinkedZones<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>PlayMode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>ProgramMetaData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_models_track_.track.html" class="tsd-signature-type">Track</a><span class="tsd-signature-symbol">; </span>ProgramURI<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Recurrence<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>RoomUUID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>StartLocalTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Volume<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/services/alarm-clock.service.ts#L104">src/services/alarm-clock.service.ts:104</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Update an alarm, all parameters are required. Use PatchAlarm where you can update a single parameter</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>input: <span class="tsd-signature-symbol">{ </span>Duration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>ID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>IncludeLinkedZones<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>PlayMode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>ProgramMetaData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_models_track_.track.html" class="tsd-signature-type">Track</a><span class="tsd-signature-symbol">; </span>ProgramURI<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Recurrence<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>RoomUUID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>StartLocalTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>Volume<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>Duration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>The duration as hh:mm:ss</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Alarm enabled after creation</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>ID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>The ID of the alarm see ListAndParseAlarms</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Include<wbr>Linked<wbr>Zones<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Should grouped palyers also play the alarm?</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Play<wbr>Mode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Alarm playmode [ NORMAL,REPEAT_ALL,SHUFFLE_NOREPEAT,SHUFFLE ]</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Program<wbr>Meta<wbr>Data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_models_track_.track.html" class="tsd-signature-type">Track</a></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>The sound metadata, can be empty string</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>ProgramURI<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>The sound uri</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Recurrence<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Repeat this alarm on [ ONCE,WEEKDAYS,WEEKENDS,DAILY ]</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>RoomUUID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>The UUID of the speaker you want this alarm for</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Start<wbr>Local<wbr>Time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>The starttime as hh:mm:ss</p>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>Volume<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<p>Volume between 0 and 100</p>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
 			</section>
 		</section>
 		<footer class="with-border-bottom">

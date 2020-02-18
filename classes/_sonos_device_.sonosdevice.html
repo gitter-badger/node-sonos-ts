@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SonosDevice | @svrooij/sonos - v0.0.0-development</title>
+	<title>SonosDevice | @svrooij/sonos</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -2335,7 +2335,7 @@ img {
 		<div class="container">
 			<div class="table-wrap">
 				<div class="table-cell">
-					<strong><a href="../index.html">@svrooij/sonos - v0.0.0-development</a></strong>
+					<strong><a href="../index.html">@svrooij/sonos</a></strong>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -2531,12 +2531,6 @@ img {
 					<a href="_sonos_device_.sonosdevice.html#alarmpatch" class="tsd-kind-icon">Alarm<wbr>Patch</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="_sonos_device_.sonosdevice.html#browse" class="tsd-kind-icon">Browse</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class">
-					<a href="_sonos_device_.sonosdevice.html#browsewithdefaults" class="tsd-kind-icon">Browse<wbr>With<wbr>Defaults</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="_sonos_device_.sonosdevice.html#cancelevents" class="tsd-kind-icon">Cancel<wbr>Events</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -2664,12 +2658,6 @@ img {
 				<dl class="tsd-comment-tags">
 					<dt>export</dt>
 					<dd></dd>
-					<dt>class</dt>
-					<dd><p>SonosDevice</p>
-					</dd>
-					<dt>extends</dt>
-					<dd><p>{SonosDeviceBase}</p>
-					</dd>
 				</dl>
 			</div>
 		</section>
@@ -2762,8 +2750,6 @@ img {
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sonos_device_.sonosdevice.html#adduritoqueue" class="tsd-kind-icon">Add<wbr>Uri<wbr>ToQueue</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sonos_device_.sonosdevice.html#alarmlist" class="tsd-kind-icon">Alarm<wbr>List</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sonos_device_.sonosdevice.html#alarmpatch" class="tsd-kind-icon">Alarm<wbr>Patch</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sonos_device_.sonosdevice.html#browse" class="tsd-kind-icon">Browse</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sonos_device_.sonosdevice.html#browsewithdefaults" class="tsd-kind-icon">Browse<wbr>With<wbr>Defaults</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sonos_device_.sonosdevice.html#cancelevents" class="tsd-kind-icon">Cancel<wbr>Events</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sonos_device_.sonosdevice.html#executecommand" class="tsd-kind-icon">Execute<wbr>Command</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sonos_device_.sonosdevice.html#getfavoriteradioshows" class="tsd-kind-icon">Get<wbr>Favorite<wbr>Radio<wbr>Shows</a></li>
@@ -2813,14 +2799,14 @@ img {
 				<a name="constructor" class="tsd-anchor"></a>
 				<h3>constructor</h3>
 				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-					<li class="tsd-signature tsd-kind-icon">new <wbr>Sonos<wbr>Device<span class="tsd-signature-symbol">(</span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, port<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, uuid<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, name<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, groupConfig<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_sonos_device_.sonosdevice.html" class="tsd-signature-type">SonosDevice</a></li>
+					<li class="tsd-signature tsd-kind-icon">new <wbr>Sonos<wbr>Device<span class="tsd-signature-symbol">(</span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, port<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, uuid<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, name<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, groupConfig<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>coordinator<span class="tsd-signature-symbol">?: </span><a href="_sonos_device_.sonosdevice.html" class="tsd-signature-type">SonosDevice</a><span class="tsd-signature-symbol">; </span>managerEvents<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_sonos_device_.sonosdevice.html" class="tsd-signature-type">SonosDevice</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<p>Overrides <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#constructor">constructor</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L23">src/sonos-device.ts:23</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L22">src/sonos-device.ts:22</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2844,16 +2830,16 @@ img {
 								</div>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> port: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;1400</span></h5>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> port: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1400</span></h5>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> uuid: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></h5>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> uuid: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> = undefined</span></h5>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></h5>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> = undefined</span></h5>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> groupConfig: <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> =&nbsp;undefined</span></h5>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> groupConfig: <span class="tsd-signature-symbol">{ </span>coordinator<span class="tsd-signature-symbol">?: </span><a href="_sonos_device_.sonosdevice.html" class="tsd-signature-type">SonosDevice</a><span class="tsd-signature-symbol">; </span>managerEvents<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> = undefined</span></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <a href="_sonos_device_.sonosdevice.html" class="tsd-signature-type">SonosDevice</a></h4>
@@ -2866,30 +2852,30 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 				<a name="_handleavtransportevent" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> _handle<wbr>AvTransport<wbr>Event</h3>
-				<div class="tsd-signature tsd-kind-icon">_handle<wbr>AvTransport<wbr>Event<span class="tsd-signature-symbol">:</span> <a href="_sonos_device_.sonosdevice.html#handleavtransportevent" class="tsd-signature-type">handleAvTransportEvent</a><span class="tsd-signature-symbol"> =&nbsp;this.handleAvTransportEvent.bind(this)</span></div>
+				<div class="tsd-signature tsd-kind-icon">_handle<wbr>AvTransport<wbr>Event<span class="tsd-signature-symbol">:</span> <a href="_sonos_device_.sonosdevice.html#handleavtransportevent" class="tsd-signature-type">handleAvTransportEvent</a><span class="tsd-signature-symbol"> = this.handleAvTransportEvent.bind(this)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L538">src/sonos-device.ts:538</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L461">src/sonos-device.ts:461</a></li>
 					</ul>
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 				<a name="_handlegroupupdate" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> _handle<wbr>Group<wbr>Update</h3>
-				<div class="tsd-signature tsd-kind-icon">_handle<wbr>Group<wbr>Update<span class="tsd-signature-symbol">:</span> <a href="_sonos_device_.sonosdevice.html#handlegroupupdate" class="tsd-signature-type">handleGroupUpdate</a><span class="tsd-signature-symbol"> =&nbsp;this.handleGroupUpdate.bind(this)</span></div>
+				<div class="tsd-signature tsd-kind-icon">_handle<wbr>Group<wbr>Update<span class="tsd-signature-symbol">:</span> <a href="_sonos_device_.sonosdevice.html#handlegroupupdate" class="tsd-signature-type">handleGroupUpdate</a><span class="tsd-signature-symbol"> = this.handleGroupUpdate.bind(this)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L595">src/sonos-device.ts:595</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L518">src/sonos-device.ts:518</a></li>
 					</ul>
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 				<a name="_handlerenderingcontrolevent" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> _handle<wbr>Rendering<wbr>Control<wbr>Event</h3>
-				<div class="tsd-signature tsd-kind-icon">_handle<wbr>Rendering<wbr>Control<wbr>Event<span class="tsd-signature-symbol">:</span> <a href="_sonos_device_.sonosdevice.html#handlerenderingcontrolevent" class="tsd-signature-type">handleRenderingControlEvent</a><span class="tsd-signature-symbol"> =&nbsp;this.handleRenderingControlEvent.bind(this)</span></div>
+				<div class="tsd-signature tsd-kind-icon">_handle<wbr>Rendering<wbr>Control<wbr>Event<span class="tsd-signature-symbol">:</span> <a href="_sonos_device_.sonosdevice.html#handlerenderingcontrolevent" class="tsd-signature-type">handleRenderingControlEvent</a><span class="tsd-signature-symbol"> = this.handleRenderingControlEvent.bind(this)</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L572">src/sonos-device.ts:572</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L495">src/sonos-device.ts:495</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2899,7 +2885,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">all<wbr>Music<wbr>Services<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L285">src/sonos-device.ts:285</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L220">src/sonos-device.ts:220</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2909,7 +2895,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">coordinator<span class="tsd-signature-symbol">:</span> <a href="_sonos_device_.sonosdevice.html" class="tsd-signature-type">SonosDevice</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L23">src/sonos-device.ts:23</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L22">src/sonos-device.ts:22</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2919,7 +2905,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">current<wbr>Track<wbr>Uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L644">src/sonos-device.ts:644</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L567">src/sonos-device.ts:567</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2929,7 +2915,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">current<wbr>Transport<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../enums/_models_transport_state_.transportstate.html" class="tsd-signature-type">TransportState</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L677">src/sonos-device.ts:677</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L600">src/sonos-device.ts:600</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2939,7 +2925,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">device<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L306">src/sonos-device.ts:306</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L239">src/sonos-device.ts:239</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2949,7 +2935,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">enqueued<wbr>Transport<wbr>Uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L655">src/sonos-device.ts:655</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L578">src/sonos-device.ts:578</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2959,7 +2945,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L491">src/sonos-device.ts:491</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L414">src/sonos-device.ts:414</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2969,7 +2955,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">group<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L22">src/sonos-device.ts:22</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L21">src/sonos-device.ts:21</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -2978,19 +2964,19 @@ img {
 				<h3><span class="tsd-flag ts-flagProtected">Protected</span> host</h3>
 				<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
-					<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#host">host</a></p>
+					<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#host">host</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L14">src/sonos-device-base.ts:14</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L14">src/sonos-device-base.ts:14</a></li>
 					</ul>
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 				<a name="issubscribed" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Subscribed</h3>
-				<div class="tsd-signature tsd-kind-icon">is<wbr>Subscribed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+				<div class="tsd-signature tsd-kind-icon">is<wbr>Subscribed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L492">src/sonos-device.ts:492</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L415">src/sonos-device.ts:415</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -3000,7 +2986,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">muted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L709">src/sonos-device.ts:709</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L632">src/sonos-device.ts:632</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -3010,7 +2996,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L21">src/sonos-device.ts:21</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L20">src/sonos-device.ts:20</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -3020,7 +3006,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">next<wbr>Track<wbr>Uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L666">src/sonos-device.ts:666</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L589">src/sonos-device.ts:589</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -3029,9 +3015,9 @@ img {
 				<h3><span class="tsd-flag ts-flagProtected">Protected</span> port</h3>
 				<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
-					<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#port">port</a></p>
+					<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#port">port</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L15">src/sonos-device-base.ts:15</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L15">src/sonos-device-base.ts:15</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -3040,9 +3026,9 @@ img {
 				<h3>uuid</h3>
 				<div class="tsd-signature tsd-kind-icon">uuid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
-					<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#uuid">uuid</a></p>
+					<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#uuid">uuid</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L18">src/sonos-device-base.ts:18</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L18">src/sonos-device-base.ts:18</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -3052,7 +3038,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">volume<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L741">src/sonos-device.ts:741</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L664">src/sonos-device.ts:664</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -3062,7 +3048,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">zone<wbr>Attributes<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_services_device_properties_service_.getzoneattributesresponse.html" class="tsd-signature-type">GetZoneAttributesResponse</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L752">src/sonos-device.ts:752</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L675">src/sonos-device.ts:675</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -3078,9 +3064,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#avtransportservice-1">AVTransportService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#avtransportservice">AVTransportService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L34">src/sonos-device-base.ts:34</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L34">src/sonos-device-base.ts:34</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3091,9 +3077,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{AVTransportService}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDeviceBase</p>
 								</dd>
@@ -3112,9 +3095,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#alarmclockservice-1">AlarmClockService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#alarmclockservice">AlarmClockService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L48">src/sonos-device-base.ts:48</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L48">src/sonos-device-base.ts:48</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3125,9 +3108,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{AlarmClockService}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDeviceBase</p>
 								</dd>
@@ -3146,9 +3126,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#audioinservice-1">AudioInService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#audioinservice">AudioInService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L54">src/sonos-device-base.ts:54</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L54">src/sonos-device-base.ts:54</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <a href="_services_audio_in_service_.audioinservice.html" class="tsd-signature-type">AudioInService</a></h4>
@@ -3164,9 +3144,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#connectionmanagerservice-1">ConnectionManagerService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#connectionmanagerservice">ConnectionManagerService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L60">src/sonos-device-base.ts:60</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L60">src/sonos-device-base.ts:60</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <a href="_services_connection_manager_service_.connectionmanagerservice.html" class="tsd-signature-type">ConnectionManagerService</a></h4>
@@ -3182,9 +3162,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#contentdirectoryservice-1">ContentDirectoryService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#contentdirectoryservice">ContentDirectoryService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L74">src/sonos-device-base.ts:74</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L74">src/sonos-device-base.ts:74</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3195,9 +3175,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{ContentDirectoryService}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDeviceBase</p>
 								</dd>
@@ -3217,7 +3194,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L627">src/sonos-device.ts:627</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L550">src/sonos-device.ts:550</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3227,9 +3204,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{SonosDevice}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
@@ -3249,7 +3223,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L652">src/sonos-device.ts:652</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L575">src/sonos-device.ts:575</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3259,18 +3233,12 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{(string | undefined)}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
 							</dl>
 						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
-							<span class="tsd-signature-symbol"> | </span>
-							<span class="tsd-signature-type">undefined</span>
-						</h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -3284,7 +3252,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L685">src/sonos-device.ts:685</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L608">src/sonos-device.ts:608</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3294,18 +3262,12 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{(TransportState | undefined)}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
 							</dl>
 						</div>
-						<h4 class="tsd-returns-title">Returns <a href="../enums/_models_transport_state_.transportstate.html" class="tsd-signature-type">TransportState</a>
-							<span class="tsd-signature-symbol"> | </span>
-							<span class="tsd-signature-type">undefined</span>
-						</h4>
+						<h4 class="tsd-returns-title">Returns <a href="../enums/_models_transport_state_.transportstate.html" class="tsd-signature-type">TransportState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -3319,7 +3281,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L696">src/sonos-device.ts:696</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L619">src/sonos-device.ts:619</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3329,18 +3291,12 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{(TransportState | undefined)}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
 							</dl>
 						</div>
-						<h4 class="tsd-returns-title">Returns <a href="../enums/_models_transport_state_.transportstate.html" class="tsd-signature-type">TransportState</a>
-							<span class="tsd-signature-symbol"> | </span>
-							<span class="tsd-signature-type">undefined</span>
-						</h4>
+						<h4 class="tsd-returns-title">Returns <a href="../enums/_models_transport_state_.transportstate.html" class="tsd-signature-type">TransportState</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -3353,9 +3309,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#devicepropertiesservice-1">DevicePropertiesService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#devicepropertiesservice">DevicePropertiesService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L88">src/sonos-device-base.ts:88</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L88">src/sonos-device-base.ts:88</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3366,9 +3322,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{DevicePropertiesService}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDeviceBase</p>
 								</dd>
@@ -3388,7 +3341,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L663">src/sonos-device.ts:663</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L586">src/sonos-device.ts:586</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3398,18 +3351,12 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{(string | undefined)}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
 							</dl>
 						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
-							<span class="tsd-signature-symbol"> | </span>
-							<span class="tsd-signature-type">undefined</span>
-						</h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -3423,7 +3370,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L515">src/sonos-device.ts:515</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L438">src/sonos-device.ts:438</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3434,9 +3381,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{EventEmitter}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
@@ -3455,9 +3399,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#groupmanagementservice-1">GroupManagementService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#groupmanagementservice">GroupManagementService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L94">src/sonos-device-base.ts:94</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L94">src/sonos-device-base.ts:94</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <a href="_services_group_management_service_.groupmanagementservice.html" class="tsd-signature-type">GroupManagementService</a></h4>
@@ -3474,7 +3418,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L638">src/sonos-device.ts:638</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L561">src/sonos-device.ts:561</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3484,18 +3428,12 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{(string | undefined)}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
 							</dl>
 						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
-							<span class="tsd-signature-symbol"> | </span>
-							<span class="tsd-signature-type">undefined</span>
-						</h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -3508,9 +3446,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#grouprenderingcontrolservice-1">GroupRenderingControlService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#grouprenderingcontrolservice">GroupRenderingControlService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L108">src/sonos-device-base.ts:108</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L108">src/sonos-device-base.ts:108</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3521,9 +3459,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{GroupRenderingControlService}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDeviceBase</p>
 								</dd>
@@ -3543,7 +3478,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L708">src/sonos-device.ts:708</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L631">src/sonos-device.ts:631</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3553,9 +3488,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{string}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
@@ -3574,9 +3506,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#musicservicesservice-1">MusicServicesService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#musicservicesservice">MusicServicesService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L122">src/sonos-device-base.ts:122</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L122">src/sonos-device-base.ts:122</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3587,9 +3519,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{MusicServicesService}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDeviceBase</p>
 								</dd>
@@ -3609,7 +3538,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L717">src/sonos-device.ts:717</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L640">src/sonos-device.ts:640</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3619,18 +3548,12 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{(boolean | undefined)}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
 							</dl>
 						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span>
-							<span class="tsd-signature-symbol"> | </span>
-							<span class="tsd-signature-type">undefined</span>
-						</h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -3644,7 +3567,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L727">src/sonos-device.ts:727</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L650">src/sonos-device.ts:650</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3654,9 +3577,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{string}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
@@ -3676,7 +3596,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L674">src/sonos-device.ts:674</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L597">src/sonos-device.ts:597</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3686,18 +3606,12 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{(string | undefined)}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
 							</dl>
 						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
-							<span class="tsd-signature-symbol"> | </span>
-							<span class="tsd-signature-type">undefined</span>
-						</h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -3711,7 +3625,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L732">src/sonos-device.ts:732</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L655">src/sonos-device.ts:655</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -3727,9 +3641,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#qplayservice-1">QPlayService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#qplayservice">QPlayService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L128">src/sonos-device-base.ts:128</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L128">src/sonos-device-base.ts:128</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <a href="_services_q_play_service_.qplayservice.html" class="tsd-signature-type">QPlayService</a></h4>
@@ -3745,9 +3659,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#queueservice-1">QueueService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#queueservice">QueueService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L142">src/sonos-device-base.ts:142</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L142">src/sonos-device-base.ts:142</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3758,9 +3672,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{QueueService}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDeviceBase</p>
 								</dd>
@@ -3779,9 +3690,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#renderingcontrolservice-1">RenderingControlService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#renderingcontrolservice">RenderingControlService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L156">src/sonos-device-base.ts:156</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L156">src/sonos-device-base.ts:156</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3792,9 +3703,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{RenderingControlService}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDeviceBase</p>
 								</dd>
@@ -3813,9 +3721,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#systempropertiesservice-1">SystemPropertiesService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#systempropertiesservice">SystemPropertiesService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L162">src/sonos-device-base.ts:162</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L162">src/sonos-device-base.ts:162</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <a href="_services_system_properties_service_.systempropertiesservice.html" class="tsd-signature-type">SystemPropertiesService</a></h4>
@@ -3832,7 +3740,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L740">src/sonos-device.ts:740</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L663">src/sonos-device.ts:663</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3842,9 +3750,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{string}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
@@ -3863,9 +3768,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#virtuallineinservice-1">VirtualLineInService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#virtuallineinservice">VirtualLineInService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L168">src/sonos-device-base.ts:168</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L168">src/sonos-device-base.ts:168</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <a href="_services_virtual_line_in_service_.virtuallineinservice.html" class="tsd-signature-type">VirtualLineInService</a></h4>
@@ -3882,7 +3787,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L749">src/sonos-device.ts:749</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L672">src/sonos-device.ts:672</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3892,18 +3797,12 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{(number | undefined)}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
 							</dl>
 						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span>
-							<span class="tsd-signature-symbol"> | </span>
-							<span class="tsd-signature-type">undefined</span>
-						</h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -3916,9 +3815,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#zonegrouptopologyservice-1">ZoneGroupTopologyService</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#zonegrouptopologyservice">ZoneGroupTopologyService</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L182">src/sonos-device-base.ts:182</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L182">src/sonos-device-base.ts:182</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3929,9 +3828,6 @@ img {
 							<dl class="tsd-comment-tags">
 								<dt>readonly</dt>
 								<dd></dd>
-								<dt>type</dt>
-								<dd><p>{ZoneGroupTopologyService}</p>
-								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDeviceBase</p>
 								</dd>
@@ -3950,9 +3846,9 @@ img {
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
-							<p>Inherited from <a href="_sonos_device_base_.sonosdevicebase.html">SonosDeviceBase</a>.<a href="_sonos_device_base_.sonosdevicebase.html#debug">debug</a></p>
+							<p>Inherited from <a href="_sonos_device_.sonosdevice.html">SonosDevice</a>.<a href="_sonos_device_.sonosdevice.html#debug">debug</a></p>
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device-base.ts#L17">src/sonos-device-base.ts:17</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device-base.ts#L17">src/sonos-device-base.ts:17</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Debugger</span></h4>
@@ -3972,7 +3868,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L72">src/sonos-device.ts:72</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L71">src/sonos-device.ts:71</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3991,10 +3887,10 @@ img {
 								<h5>trackUri: <span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> positionInQueue: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> positionInQueue: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> enqueueAsNext: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> enqueueAsNext: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_services_av_transport_service_.adduritoqueueresponse.html" class="tsd-signature-type">AddURIToQueueResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -4011,7 +3907,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L90">src/sonos-device.ts:90</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L90">src/sonos-device.ts:90</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4019,6 +3915,9 @@ img {
 								<p>Get a parsed list of all alarms.</p>
 							</div>
 							<dl class="tsd-comment-tags">
+								<dt>deprecated</dt>
+								<dd><p>Will be removed in favor of Extended AlarmClockService</p>
+								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
@@ -4038,7 +3937,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L127">src/sonos-device.ts:127</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L109">src/sonos-device.ts:109</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4046,6 +3945,9 @@ img {
 								<p>Patch a single alarm. Only the ID and one property you want to change are required.</p>
 							</div>
 							<dl class="tsd-comment-tags">
+								<dt>deprecated</dt>
+								<dd><p>Will be removed in favor of Extended AlarmClockService</p>
+								</dd>
 								<dt>memberof</dt>
 								<dd><p>SonosDevice</p>
 								</dd>
@@ -4062,98 +3964,6 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="browse" class="tsd-anchor"></a>
-				<h3>Browse</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">Browse<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_models_browse_response_.browseresponse.html" class="tsd-signature-type">BrowseResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L156">src/sonos-device.ts:156</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Browse or search content directory</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>SonosDevice</p>
-								</dd>
-								<dt>see</dt>
-								<dd><p><a href="http://www.upnp.org/specs/av/UPnP-av-ContentDirectory-v1-Service.pdf">http://www.upnp.org/specs/av/UPnP-av-ContentDirectory-v1-Service.pdf</a></p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>input: <span class="tsd-signature-type">object</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter">
-										<h5>Browse<wbr>Flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>Filter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>Requested<wbr>Count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>Sort<wbr>Criteria<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-									</li>
-									<li class="tsd-parameter">
-										<h5>Starting<wbr>Index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_models_browse_response_.browseresponse.html" class="tsd-signature-type">BrowseResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-				<a name="browsewithdefaults" class="tsd-anchor"></a>
-				<h3>Browse<wbr>With<wbr>Defaults</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-					<li class="tsd-signature tsd-kind-icon">Browse<wbr>With<wbr>Defaults<span class="tsd-signature-symbol">(</span>ObjectID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_models_browse_response_.browseresponse.html" class="tsd-signature-type">BrowseResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L176">src/sonos-device.ts:176</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Same as browse but with all parameters set to default.</p>
-							</div>
-							<dl class="tsd-comment-tags">
-								<dt>memberof</dt>
-								<dd><p>SonosDevice</p>
-								</dd>
-							</dl>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>ObjectID: <span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The search query, [&#39;A:ARTIST&#39;,&#39;A:ALBUMARTIST&#39;,&#39;A:ALBUM&#39;,&#39;A:GENRE&#39;,&#39;A:COMPOSER&#39;,&#39;A:TRACKS&#39;,&#39;A:PLAYLISTS&#39;] with optionally &#39;:search+query&#39; behind it.</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_models_browse_response_.browseresponse.html" class="tsd-signature-type">BrowseResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 				<a name="cancelevents" class="tsd-anchor"></a>
 				<h3>Cancel<wbr>Events</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -4163,7 +3973,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L498">src/sonos-device.ts:498</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L421">src/sonos-device.ts:421</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4190,7 +4000,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L188">src/sonos-device.ts:188</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L121">src/sonos-device.ts:121</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4232,7 +4042,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L235">src/sonos-device.ts:235</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L170">src/sonos-device.ts:170</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4259,7 +4069,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L245">src/sonos-device.ts:245</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L180">src/sonos-device.ts:180</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4286,7 +4096,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L255">src/sonos-device.ts:255</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L190">src/sonos-device.ts:190</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4313,7 +4123,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L763">src/sonos-device.ts:763</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L686">src/sonos-device.ts:686</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4340,7 +4150,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L265">src/sonos-device.ts:265</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L200">src/sonos-device.ts:200</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4367,7 +4177,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L774">src/sonos-device.ts:774</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L696">src/sonos-device.ts:696</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4394,7 +4204,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L785">src/sonos-device.ts:785</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L706">src/sonos-device.ts:706</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4421,7 +4231,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L799">src/sonos-device.ts:799</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L717">src/sonos-device.ts:717</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4448,7 +4258,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L807">src/sonos-device.ts:807</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L725">src/sonos-device.ts:725</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4475,7 +4285,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L276">src/sonos-device.ts:276</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L211">src/sonos-device.ts:211</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4511,7 +4321,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L54">src/sonos-device.ts:54</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L53">src/sonos-device.ts:53</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4539,7 +4349,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L315">src/sonos-device.ts:315</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L248">src/sonos-device.ts:248</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4575,7 +4385,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L292">src/sonos-device.ts:292</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L227">src/sonos-device.ts:227</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4602,7 +4412,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L815">src/sonos-device.ts:815</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L733">src/sonos-device.ts:733</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4629,7 +4439,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L823">src/sonos-device.ts:823</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L741">src/sonos-device.ts:741</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4656,7 +4466,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L831">src/sonos-device.ts:831</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L749">src/sonos-device.ts:749</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4683,7 +4493,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L336">src/sonos-device.ts:336</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L268">src/sonos-device.ts:268</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4720,7 +4530,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L403">src/sonos-device.ts:403</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L335">src/sonos-device.ts:335</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4753,7 +4563,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L839">src/sonos-device.ts:839</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L757">src/sonos-device.ts:757</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4780,7 +4590,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L848">src/sonos-device.ts:848</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L766">src/sonos-device.ts:766</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4813,7 +4623,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L857">src/sonos-device.ts:857</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L775">src/sonos-device.ts:775</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4849,7 +4659,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L428">src/sonos-device.ts:428</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L360">src/sonos-device.ts:360</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4882,7 +4692,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L866">src/sonos-device.ts:866</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L784">src/sonos-device.ts:784</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4915,7 +4725,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L878">src/sonos-device.ts:878</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L796">src/sonos-device.ts:796</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4951,7 +4761,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L891">src/sonos-device.ts:891</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L808">src/sonos-device.ts:808</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -4985,7 +4795,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L903">src/sonos-device.ts:903</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L820">src/sonos-device.ts:820</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -5021,7 +4831,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L913">src/sonos-device.ts:913</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L830">src/sonos-device.ts:830</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -5048,7 +4858,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L439">src/sonos-device.ts:439</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L371">src/sonos-device.ts:371</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -5075,7 +4885,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L450">src/sonos-device.ts:450</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L382">src/sonos-device.ts:382</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -5102,7 +4912,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L461">src/sonos-device.ts:461</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L393">src/sonos-device.ts:393</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -5129,7 +4939,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L472">src/sonos-device.ts:472</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L404">src/sonos-device.ts:404</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -5150,16 +4960,16 @@ img {
 				<a name="executecommandgetfunctions" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> execute<wbr>Command<wbr>Get<wbr>Functions</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<li class="tsd-signature tsd-kind-icon">execute<wbr>Command<wbr>Get<wbr>Functions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+					<li class="tsd-signature tsd-kind-icon">execute<wbr>Command<wbr>Get<wbr>Functions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L212">src/sonos-device.ts:212</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L147">src/sonos-device.ts:147</a></li>
 							</ul>
 						</aside>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{}</span></h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-index-signature">
 								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">Function</span></h5>
@@ -5172,13 +4982,13 @@ img {
 				<a name="executecommandgetservice" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> execute<wbr>Command<wbr>Get<wbr>Service</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<li class="tsd-signature tsd-kind-icon">execute<wbr>Command<wbr>Get<wbr>Service<span class="tsd-signature-symbol">(</span>serviceName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					<li class="tsd-signature tsd-kind-icon">execute<wbr>Command<wbr>Get<wbr>Service<span class="tsd-signature-symbol">(</span>serviceName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L217">src/sonos-device.ts:217</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L152">src/sonos-device.ts:152</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -5187,10 +4997,7 @@ img {
 								<h5>serviceName: <span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span>
-							<span class="tsd-signature-symbol"> | </span>
-							<span class="tsd-signature-type">undefined</span>
-						</h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -5204,7 +5011,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L539">src/sonos-device.ts:539</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L462">src/sonos-device.ts:462</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -5221,19 +5028,19 @@ img {
 				<a name="handlegroupupdate" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> handle<wbr>Group<wbr>Update</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<li class="tsd-signature tsd-kind-icon">handle<wbr>Group<wbr>Update<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<li class="tsd-signature tsd-kind-icon">handle<wbr>Group<wbr>Update<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>coordinator<span class="tsd-signature-symbol">: </span><a href="_sonos_device_.sonosdevice.html" class="tsd-signature-type">SonosDevice</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L596">src/sonos-device.ts:596</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L519">src/sonos-device.ts:519</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>data: <span class="tsd-signature-type">object</span></h5>
+								<h5>data: <span class="tsd-signature-symbol">{ </span>coordinator<span class="tsd-signature-symbol">: </span><a href="_sonos_device_.sonosdevice.html" class="tsd-signature-type">SonosDevice</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter">
 										<h5>coordinator<span class="tsd-signature-symbol">: </span><a href="_sonos_device_.sonosdevice.html" class="tsd-signature-type">SonosDevice</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
@@ -5258,7 +5065,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/edeab5e/src/sonos-device.ts#L573">src/sonos-device.ts:573</a></li>
+								<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/4595395/src/sonos-device.ts#L496">src/sonos-device.ts:496</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
