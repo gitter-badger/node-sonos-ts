@@ -2373,7 +2373,12 @@ img {
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<span class="target">PlayTtsOptions</span>
+					<a href="_models_requests_.playnotificationoptionsbase.html" class="tsd-signature-type">PlayNotificationOptionsBase</a>
+					<ul class="tsd-hierarchy">
+						<li>
+							<span class="target">PlayTtsOptions</span>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</section>
@@ -2384,13 +2389,14 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_models_requests_.playttsoptions.html#delayms" class="tsd-kind-icon">delay<wbr>Ms</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_models_requests_.playttsoptions.html#endpoint" class="tsd-kind-icon">endpoint</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_models_requests_.playttsoptions.html#gender" class="tsd-kind-icon">gender</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_models_requests_.playttsoptions.html#lang" class="tsd-kind-icon">lang</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_models_requests_.playttsoptions.html#onlywhenplaying" class="tsd-kind-icon">only<wbr>When<wbr>Playing</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_models_requests_.playttsoptions.html#onlywhenplaying" class="tsd-kind-icon">only<wbr>When<wbr>Playing</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_models_requests_.playttsoptions.html#text" class="tsd-kind-icon">text</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_models_requests_.playttsoptions.html#timeout" class="tsd-kind-icon">timeout</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_models_requests_.playttsoptions.html#volume" class="tsd-kind-icon">volume</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_models_requests_.playttsoptions.html#timeout" class="tsd-kind-icon">timeout</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_models_requests_.playttsoptions.html#volume" class="tsd-kind-icon">volume</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2398,13 +2404,34 @@ img {
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<a name="delayms" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> delay<wbr>Ms</h3>
+				<div class="tsd-signature tsd-kind-icon">delay<wbr>Ms<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+				<aside class="tsd-sources">
+					<p>Inherited from <a href="_models_requests_.playnotificationoptionsbase.html">PlayNotificationOptionsBase</a>.<a href="_models_requests_.playnotificationoptionsbase.html#delayms">delayMs</a></p>
+					<ul>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/90a0ce6/src/models/requests.ts#L10">src/models/requests.ts:10</a></li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Sometimes sonos needs some extra time to play the notification. Set this to a value between 100 and 500 to wait that number of milliseconds to wait before sending the next command.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>memberof</dt>
+						<dd><p>PlayNotificationOptionsBase</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="endpoint" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> endpoint</h3>
 				<div class="tsd-signature tsd-kind-icon">endpoint<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/de19aef/src/models/requests.ts#L63">src/models/requests.ts:63</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/90a0ce6/src/models/requests.ts#L76">src/models/requests.ts:76</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2424,7 +2451,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">gender<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/de19aef/src/models/requests.ts#L70">src/models/requests.ts:70</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/90a0ce6/src/models/requests.ts#L83">src/models/requests.ts:83</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2444,7 +2471,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">lang<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/de19aef/src/models/requests.ts#L56">src/models/requests.ts:56</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/90a0ce6/src/models/requests.ts#L69">src/models/requests.ts:69</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2458,13 +2485,14 @@ img {
 					</dl>
 				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 				<a name="onlywhenplaying" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> only<wbr>When<wbr>Playing</h3>
 				<div class="tsd-signature tsd-kind-icon">only<wbr>When<wbr>Playing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
 				<aside class="tsd-sources">
+					<p>Inherited from <a href="_models_requests_.playnotificationoptionsbase.html">PlayNotificationOptionsBase</a>.<a href="_models_requests_.playnotificationoptionsbase.html#onlywhenplaying">onlyWhenPlaying</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/de19aef/src/models/requests.ts#L77">src/models/requests.ts:77</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/90a0ce6/src/models/requests.ts#L18">src/models/requests.ts:18</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2473,7 +2501,7 @@ img {
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>memberof</dt>
-						<dd><p>PlayNotificationOptions</p>
+						<dd><p>PlayNotificationOptionsBase</p>
 						</dd>
 					</dl>
 				</div>
@@ -2484,7 +2512,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/de19aef/src/models/requests.ts#L49">src/models/requests.ts:49</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/90a0ce6/src/models/requests.ts#L62">src/models/requests.ts:62</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2498,13 +2526,14 @@ img {
 					</dl>
 				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 				<a name="timeout" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> timeout</h3>
 				<div class="tsd-signature tsd-kind-icon">timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
+					<p>Inherited from <a href="_models_requests_.playnotificationoptionsbase.html">PlayNotificationOptionsBase</a>.<a href="_models_requests_.playnotificationoptionsbase.html#timeout">timeout</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/de19aef/src/models/requests.ts#L91">src/models/requests.ts:91</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/90a0ce6/src/models/requests.ts#L26">src/models/requests.ts:26</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2513,18 +2542,19 @@ img {
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>memberof</dt>
-						<dd><p>PlayNotificationOptions</p>
+						<dd><p>PlayNotificationOptionsBase</p>
 						</dd>
 					</dl>
 				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 				<a name="volume" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> volume</h3>
 				<div class="tsd-signature tsd-kind-icon">volume<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
+					<p>Inherited from <a href="_models_requests_.playnotificationoptionsbase.html">PlayNotificationOptionsBase</a>.<a href="_models_requests_.playnotificationoptionsbase.html#volume">volume</a></p>
 					<ul>
-						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/de19aef/src/models/requests.ts#L84">src/models/requests.ts:84</a></li>
+						<li>Defined in <a href="https://github.com/svrooij/node-sonos-ts/blob/90a0ce6/src/models/requests.ts#L34">src/models/requests.ts:34</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2533,7 +2563,7 @@ img {
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>memberof</dt>
-						<dd><p>PlayNotificationOptions</p>
+						<dd><p>PlayNotificationOptionsBase</p>
 						</dd>
 					</dl>
 				</div>
