@@ -5,12 +5,12 @@ import debug, { Debugger } from 'debug';
 import {
   AVTransportService,
   AlarmClockService,
-  AudioInService,
   ConnectionManagerService,
   ContentDirectoryService,
   DevicePropertiesService,
   GroupManagementService,
   GroupRenderingControlService,
+  HTControlService,
   MusicServicesService,
   QPlayService,
   QueueService,
@@ -85,13 +85,6 @@ export default class SonosDeviceBase {
     return this.alarmclockservice;
   }
 
-  private audioinservice: AudioInService | undefined;
-
-  public get AudioInService(): AudioInService {
-    if (this.audioinservice === undefined) this.audioinservice = new AudioInService(this.host, this.port, this.uuid);
-    return this.audioinservice;
-  }
-
   private connectionmanagerservice: ConnectionManagerService | undefined;
 
   public get ConnectionManagerService(): ConnectionManagerService {
@@ -149,6 +142,13 @@ export default class SonosDeviceBase {
   public get GroupRenderingControlService(): GroupRenderingControlService {
     if (this.grouprenderingcontrolservice === undefined) this.grouprenderingcontrolservice = new GroupRenderingControlService(this.host, this.port, this.uuid);
     return this.grouprenderingcontrolservice;
+  }
+
+  private htcontrolservice: HTControlService | undefined;
+
+  public get HTControlService(): HTControlService {
+    if (this.htcontrolservice === undefined) this.htcontrolservice = new HTControlService(this.host, this.port, this.uuid);
+    return this.htcontrolservice;
   }
 
   private musicservicesservice: MusicServicesService | undefined;

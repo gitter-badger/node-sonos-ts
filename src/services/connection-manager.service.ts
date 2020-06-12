@@ -4,9 +4,9 @@ import BaseService from './base-service';
 export class ConnectionManagerService extends BaseService<ConnectionManagerServiceEvent> {
   readonly serviceNane: string = 'ConnectionManager';
 
-  readonly controlUrl: string = '/MediaRenderer/ConnectionManager/Control';
+  readonly controlUrl: string = '/MediaServer/ConnectionManager/Control';
 
-  readonly eventSubUrl: string = '/MediaRenderer/ConnectionManager/Event';
+  readonly eventSubUrl: string = '/MediaServer/ConnectionManager/Event';
 
   readonly scpUrl: string = '/xml/ConnectionManager1.xml';
 
